@@ -25,12 +25,11 @@ li {
 	float: left;
 	text-decoration: none;
 	cursor: pointer;
-	color: white;
 }
 
 li a {
   display: block;
-  color: white;
+  color: #666;
   padding:10px 10px 10px 10px;
   text-decoration: none;
 }
@@ -75,20 +74,19 @@ li a:focus {
 }
 
 .pict1 {
-	background-image: url('img/picture1.jpg');
+	background-color: transparent;
     height: 100%;
 }
 
 .pict2 {
-	background-image: url('img/picture2.jpg');
+	background-color: transparent;
 	min-height: 400px;
 }
 
 .pict3 {
-	background-image: url('img/picture3.jpg');
+	background-color: transparent;
 	min-height: 600px;
 }
-
 .section {
 	text-align: center;
 	padding: 60px 80px 60px 80px;
@@ -100,13 +98,13 @@ li a:focus {
 }
 
 .section2 {
-	background-color: #B4AFAF;
+	background-color: #15b1d7;
 	color: #F0F0F0;
 }
 
 .section3 {
-	background-color: #B4AFAF;
-	color: #F0F0F0;
+	background-color: #f4f4f4;
+	color: #666;
 }
 
 
