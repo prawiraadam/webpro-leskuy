@@ -1,0 +1,181 @@
+/*INI UNTUK HOMEPAGE*/
+body, html {
+	height: 100%;
+	margin:0;
+	font-size: 16px;
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	line-height: 1.8em;
+	color:#666;
+}
+
+.nav_home {
+	overflow: hidden;
+	float: right;
+	width: 100%;
+	position: fixed;
+  	background-color: transparent;
+  	font-family: Trebuchet MS, sans-serif;	
+  	z-index: 1;
+  	text-decoration: none;
+}
+
+li {
+	display: inline-block;
+	float: left;
+	text-decoration: none;
+	cursor: pointer;
+	color: white;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding:10px 10px 10px 10px;
+  text-decoration: none;
+}
+
+li a:hover {
+	cursor: pointer;
+	background-color: rgba(161,161,161,0.3);
+}
+
+li a:focus {
+	background-color: rgba(161,161,161,0.6)
+}
+
+.pict1, .pict2, .pict3 {
+	position: relative;
+	opacity: 0.7;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.ptext {
+	position: absolute;
+	top:50%;
+	width: 100%;
+	text-align: center;
+	color: #000;
+	font-size: 27px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+}
+
+.ptext .border {
+	background-color: #111;
+	color: white;
+	padding: 20px 20px 20px 20px;
+}
+
+.ptext .border.trans {
+	background-color: transparent;
+}
+
+.pict1 {
+	background-image: url('img/picture1.jpg');
+    height: 100%;
+}
+
+.pict2 {
+	background-image: url('img/picture2.jpg');
+	min-height: 400px;
+}
+
+.pict3 {
+	background-image: url('img/picture3.jpg');
+	min-height: 600px;
+}
+
+.section {
+	text-align: center;
+	padding: 60px 80px 60px 80px;
+}
+
+.section1 {
+	background-color: #f4f4f4;
+	color: #666;
+}
+
+.section2 {
+	background-color: #B4AFAF;
+	color: #F0F0F0;
+}
+
+.section3 {
+	background-color: #B4AFAF;
+	color: #F0F0F0;
+}
+
+
+.wrap {
+	  height: 100%;
+ 	 display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+	transition: 0.4s;
+	width: 300px;
+	background: #fff;
+	text-align: center;
+	font-size: 16px;
+	font-family: sans-serif;
+	float: left;
+	margin: 50px;
+}
+
+/*INI UNTUK REGIS PAKET*/
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+
+.pagepaket {
+    margin: 0;
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: black;
+    text-align: left;
+    background-color: #f5f8fa;
+}
+
+.navbar-laravel
+{
+    box-shadow: 0 2px 4px rgba(0,0,0,.04);
+    background-color: rgba(161,161,161,0.2);
+    color: white;
+}
+
+.navbar-brand , .nav-link, .my-form, .login-form
+{
+    font-family: Raleway, sans-serif;
+}
+
+.my-form
+{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.my-form .row
+{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.login-form
+{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.login-form .row
+{
+    margin-left: 0;
+    margin-right: 0;
+}
