@@ -1,72 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" >
+
 <head>
-	<title>Homepage</title>
-	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <title>Leskuy!</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab:300'><!-- library font yang dipakai -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.5/flickity.min.css'><!-- untuk import ke situs template -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
-
-<nav class="nav_home">
-		<ul>
-			<li><a href="home.html">LesKuy!</a></li>
-			<li style="float:right"><a href="paket.html">Sign Up</a></li>
- 			<li style="float:right"><a href="#">Login</a></li>
-  			<li style="float:right"><a href="#">Help</a></li>
-  			<li style="float:right"><a href="home.html">Home</a></li>
-		</ul>
-	</nav>
-
 <body>
-	<!-- INI BATAS NAV SAMA DIV-->
-	<!-- <div class="pict1">
-		<div class="ptext">
-			<span class="border trans">
-				WELCOME TO LESKUY!
-			</span>
-		</div>
-	</div> -->
-	<section class="section section1">
-		<h2>Introducing LesKuy!</h2>
-		<p>Web-based application to help student of Senior High School of creating history. Make your dreams come true!</p>
-	</section>
-	<!-- <div class="pict2">
-		<div class="ptext">
-			<span class="border trans">
-				Start your own history!
-			</span>
-		</div>
-	</div> -->
-	<section class="section section2">
-		<h2>Professional Teachers</h2>
-		<p>Your success is our priority and our mission is to achieve it</p>
-	</section>
-	<!-- <div class="pict3">
-		<div class="ptext">
-			<span class="border trans">
-				Make your dreams come true!
-			</span>
-		</div>
-	</div> -->
-	<section class="section section3">
-		<h2>Join us now!</h2>
-		<p>Your future will be as bright as the sunshine</p>
-	</section>
-	<!-- <div class="wrap">
-		<div class="card">
-				<img src="img/picture1.jpg" alt="pic1" style="width: 100%">
-				<div class="container">
-					<h4><p>Web-based application to help student of Senior High School of creating history. Make your dreams come true<p>
-				</div>
-		</div>
-		<div class="card">
-			<img src="img/picture2.jpg" alt="pic1" style="width: 100%">
-				<div class="container">
-					<h4><p>Web-based application to help student of Senior High School of creating history. Make your dreams come true<p>
-				</div>
-		</div>
-	</div> -->
+    <div class="hero-slider" data-carousel>
+        <div class="carousel-cell" style="background-image:url(img/picture1.jpg);">
+            <div class="overlay">
+            </div>
+            <div class="inner">
+                <h3 class="subtitle">LESKUY!</h3>
+                <h2 class="title">Make Your Dreams Come True!</h2>
+                <a href="#" target="_blank" class="btn">Learn more</a>
+            </div>
+        </div>
+        <div class="carousel-cell" style="background-image:url(img/picture2.jpg);">
+            <div class="overlay">
+            </div>
+            <div class="inner">
+                <h3 class="subtitle">Professional Teachers</h3>
+                <h2 class="title">Your Success is Our Priority</h2>
+                <a href="#" target="_blank" class="btn">Learn More</a>
+            </div>
+        </div>
+        <div class="carousel-cell" style="background-image:url(img/picture3.jpg);">
+            <div class="overlay">
+            </div>
+            <div class="inner">
+                <h3 class="subtitle">Join Us Now!</h3>
+                <h2 class="title">What are You Waiting For?</h2>
+                <a href="#" target="_blank" class="btn">Get Yours!</a>
+            </div>
+        </div>
+    </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.5/flickity.pkgd.min.js'></script>
+  <script  src="js/index.js"></script>
 </body>
 </html>
