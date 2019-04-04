@@ -24,3 +24,12 @@ flkty.on('scroll', function () {
     image.style.backgroundPosition = x + 'px';
   });
 });
+
+//Parallax Effect on Mouse Move
+ $(window).mousemove(function(e) {
+    var change;
+    var xpos=e.clientX;var ypos=e.clientY;var left= change*20;
+    var  xpos=xpos*2;ypos=ypos*2;
+    $('.carousel-cell').css('top',((0+(ypos/200))+"px"));
+    $('.inner').css('right',(( 0+(xpos/300))+"px"));           
+  });
