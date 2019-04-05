@@ -1,8 +1,84 @@
 /*HOMEPAGE*/
 body {
   background-color: #000;
+  overflow-x: hidden;
 }
 
+a {
+  color: #fed136;
+}
+
+a:hover {
+  color: #fec503;
+}
+
+#mainNav {
+  background-color: transparent; 
+  /*untuk warna bg navbar setelah responsive layar HP*/
+}
+
+#mainNav .navbar-toggler {
+  font-size: 12px;
+  padding: 13px;
+  text-transform: uppercase;
+  color: black;
+  border: 0;
+  background-color: transparent;  
+  font-family: 'Roboto';
+}
+
+#mainNav .navbar-brand {
+  color: white;
+  font-family: 'Roboto';
+}
+
+#mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+  color: #fec503;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: white;
+  font-family: 'Roboto';
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: #fed136;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+    background-color: transparent;
+  }
+  #mainNav .navbar-brand {
+    font-size: 1.3em;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  #mainNav .navbar-nav .nav-item .nav-link {
+    padding: 1.1em 1em !important;
+  }
+
+  #mainNav.navbar-shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #6B5242; /*disesuaiin sama gambar background*/
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    font-size: 1.4em;
+    padding: 12px 0;
+  }
+}
+
+
+/*FILE ASLI*/
 .overlay {
   position: absolute;
   width: 100%;
@@ -11,7 +87,6 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(to bottom, rgba(14, 29, 51, 0.8), rgba(14, 29, 51, 0.2));
 }
 
 .hero-slider {
@@ -84,17 +159,82 @@ body {
 .hero-slider .flickity-page-dots .dot {
   width: 30px;
   height: 4px;
-  opacity: 1;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 1);
   border: 0 solid white;
   border-radius: 0;
 }
 .hero-slider .flickity-page-dots .dot.is-selected {
-  background: #ff0000;
-  border: 0 solid #ff0000;
+  background: #fec503;
+  border: 0 solid #fec503;
+}
+
+@media screen and (max-width: 620px) {
+  .carousel-cell .inner {
+    width: 100%;
+    display: block;
+  }
+}
+
+/*CARDS*/
+
+/* Float four columns side by side */
+#cardcont {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: 'Montserrat';
+}
+
+h2 {
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 16px;
+  border-radius: 20px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+ Clear floats after the columns 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 1000px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
 }
 
 
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.btn {
+  border: 1px solid black;
+}
 
 /*INI UNTUK REGIS PAKET*/
 

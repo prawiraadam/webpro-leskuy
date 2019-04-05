@@ -30,6 +30,5 @@ flkty.on('scroll', function () {
     var change;
     var xpos=e.clientX;var ypos=e.clientY;var left= change*20;
     var  xpos=xpos*2;ypos=ypos*2;
-    $('.carousel-cell').css('top',((0+(ypos/200))+"px"));
     $('.inner').css('right',(( 0+(xpos/300))+"px"));           
   });
