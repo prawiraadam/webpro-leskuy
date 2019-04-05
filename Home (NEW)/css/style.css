@@ -231,9 +231,17 @@ h2 {
   text-align: center;
   background-color: #f1f1f1;
 }
-
-.btn {
+.subbtn {
+  margin-top: 10px;
   border: 1px solid black;
+  border-radius: 3px;
+  background-color: #6B5242;
+  color: white;
+}
+
+.subbtn .btn-block:active {
+  background-color: #8D7667;
+  color: white;
 }
 
 /*INI UNTUK REGIS PAKET*/
