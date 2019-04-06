@@ -11,7 +11,9 @@
   <link rel="stylesheet" href="css/style.css">
   <!-- Bootstrap core CSS -->
   <link href="source/bootstrap/css/bootstrap.min.css" rel="stylesheet"><!--css bootstrap supaya letak navbar rapi-->
-  <link href="source/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css"><!-- untuk icon navbar saat responsive layar kecil -->
+  <link href="source/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- untuk icon navbar saat responsive layar kecil -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.5/flickity.pkgd.min.js'></script> <!-- carousel -->
   <!-- Import untuk navbar -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- parallax -->
@@ -19,9 +21,9 @@
 </head>
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">KATA PIJAR</a>
+      <a class="navbar-brand js-scroll-trigger" href="home.html">KATA PIJAR</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars fa-2x" style="color: white"></i>
+        <i class="fas fa-bars" style="color: white"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
@@ -29,23 +31,19 @@
             <a class="nav-link js-scroll-trigger" href="#1">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#2">Student</a>
+            <a class="nav-link js-scroll-trigger" href="#2">Courses</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#3">Teacher</a>
+            <a class="nav-link js-scroll-trigger" href="#3">Programs</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="log in.html">Login</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#5">Sign Up</a>
-          </li>
-        </ul>
       </div>
     </div>
   </nav>
 <body>
-    <div class="hero-slider" data-flickity='{ "wrapAround": true }'"><!-- A hero slider is defined as a large, featured series of images prominently displayed on the homepage. -->
+    <div class="hero-slider" data-flickity='{ "wrapAround": true }'><!-- A hero slider is defined as a large, featured series of images prominently displayed on the homepage. -->
         <div class="carousel-cell" style="background-image:url(img/picture1.jpg);">
             <div class="overlay">
             </div>
@@ -117,8 +115,76 @@
             </a>
         </div>
     </div>
+
+    <!-- INI OPSI FOOTER KEDUA -->
+
+    <!-- Footer -->
+<!--     <footer class="footcont">
+        <div class="container">
+            <div class="row" id="foottxt">
+                <div class="col-sm-3">
+                    <h2 class="logo"><a href="#"> LOGO
+                     </a></h2>
+                </div>
+                <div class="col-sm-2">
+                    <h5>About us</h5>
+                    <ul>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Achievements</a></li>
+                        <li><a href="#">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Forums</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Legal</h5>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <div class="social-networks">
+                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                    </div>
+                    <button type="button" class="btn btn-default">Contact us</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2016 Copyright Kata Pijar </p>
+        </div>
+    </footer> -->
+  <!-- Footer -->
+<div class="content">
+</div>
+    <footer id="myFooter">
+        <div class="container">
+            <ul>
+                <li><a href="#">Company Information</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Terms of service</a></li>
+            </ul>
+        <p class="footer-copyright">© 2016 Copyright Kata Pijar</p>
+        </div>
+        <div class="footer-social">
+            <a href="#" class="social-icons"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="social-icons"><i class="fa fa-instagram"></i></a>
+            <a href="#" class="social-icons"><i class="fa fa-twitter"></i></a>
+        </div>
+    </footer>
 <!-- JAVASCRIPTS -->
-  <script src="js/index.js"></script>
-  <script src="js/leskuy.js"></script>
+  <script src="js/landing.js"></script>
+  <script src="js/navbar.js"></script>
 </body>
 </html>

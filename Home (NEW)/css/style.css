@@ -1,15 +1,14 @@
 /*HOMEPAGE*/
 body {
-  background-color: #000;
   overflow-x: hidden;
 }
 
-a {
+.nav-link {
   color: #fed136;
 }
 
-a:hover {
-  color: #fec503;
+.navlink:hover {
+  color: #FFD700;
 }
 
 #mainNav {
@@ -17,13 +16,14 @@ a:hover {
   /*untuk warna bg navbar setelah responsive layar HP*/
 }
 
-#mainNav .navbar-toggler {
-  font-size: 12px;
+#mainNav .navbar-toggler { /*Memposisikan sidebar bootstrap*/
+  font-size: 16px;
+  margin-right: -100px;
+  margin-bottom: 8px;
   padding: 13px;
-  text-transform: uppercase;
   color: black;
   border: 0;
-  background-color: transparent;  
+  background-color: #023d67;  
   font-family: 'Roboto';
 }
 
@@ -47,9 +47,9 @@ a:hover {
   color: #fed136;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 690px) {
   #mainNav {
-    padding-top: 25px;
+    padding-top: 20px;
     padding-bottom: 25px;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
@@ -69,14 +69,14 @@ a:hover {
   #mainNav.navbar-shrink {
     padding-top: 0;
     padding-bottom: 0;
-    background-color: #6B5242; /*disesuaiin sama gambar background*/
+    background-color: #023d67; 
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.4em;
     padding: 12px 0;
   }
 }
-
+/*disesuaiin sama gambar background*/
 
 /*FILE ASLI*/
 .overlay {
@@ -233,16 +233,94 @@ h2 {
   margin-top: 10px;
   border: 1px solid black;
   border-radius: 3px;
-  background-color: #6B5242;
+  background-color: #03749c;
   color: white;
 }
 
 .subbtn .btn-block:active {
-  background-color: #8D7667;
+  background-color: #15b1d7;
   color: white;
 }
 
-/*INI UNTUK REGIS PAKET*/
+.subbtn .btn-block:hover {
+  transform: scale(1.05);
+}
+
+/*----------------FOOTER-------------------*/
+
+#myFooter{
+    padding-top:32px;
+    background-color: #03749c;
+}
+
+#myFooter .container{
+    text-align: center;
+}
+
+#myFooter .footer-copyright{
+    margin-bottom: 35px;
+    text-align: center;
+    color: white;
+}
+
+#myFooter ul{
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 18px;
+}
+
+#myFooter li{
+    display: inline-block;
+    margin: 0px 15px;
+    line-height: 2;
+}
+
+#myFooter a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+#myFooter a:hover {
+  color: #fed136;
+}
+
+#myFooter .footer-social{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #023d67;
+}
+
+#myFooter .fa{
+    font-size: 25px;
+    margin-right: 15px;
+    margin-left: 20px;
+    background-color: white;
+    color: #BDBDBD;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 43px;
+    text-decoration: none;
+    transition:color 0.2s;
+}
+
+#myFooter .fa-facebook:hover{
+   color: #DAA520 ;
+}
+
+#myFooter .fa-twitter:hover{
+    color: #DAA520  ;
+
+}
+
+#myFooter .fa-instagram:hover{
+    color: #DAA520;
+} 
+
+/*--------------Sign Up--------------*/
 
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
 
@@ -291,4 +369,394 @@ h2 {
 {
     margin-left: 0;
     margin-right: 0;
+}
+
+
+/*---------------LOGIN PAGE------------*/
+
+.login {
+  background: url("img/picture1.jpg");
+}
+
+#loginNav {
+  background-color: #023d67; 
+  /*untuk warna bg navbar setelah responsive layar HP*/
+}
+
+.fa-bars {
+  font-size: 1.3em; /*ubah ukuran sidebar*/
+}
+
+#loginNav .navbar-toggler { /*Memposisikan sidebar bootstrap*/
+  font-size: 16px;
+  margin-right: -100px;
+  margin-bottom: 8px;
+  padding: 13px;
+  color: black;
+  border: 0;
+  background-color: #023d67;  
+  font-family: 'Roboto';
+}
+
+#loginNav .navbar-brand { /*logo navbar kata pijar*/
+  color: white;
+  font-family: 'Roboto';
+}
+
+#loginNav .navbar-brand.active, #mainNav .navbar-brand:active, #loginNav .navbar-brand:focus, #loginNav .navbar-brand:hover {
+  color: #fec503;
+}
+
+#loginNav .navbar-nav .nav-item .nav-link { /*manage list di navbar*/
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: white;
+  font-family: 'Roboto';
+}
+
+#loginNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: #fed136;
+}
+
+@media (min-width: 690px) {
+  #loginNav {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+    background-color: #023d67;
+  }
+  #loginNav .navbar-brand {
+    font-size: 1.3em;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  #loginNav .navbar-nav .nav-item .nav-link {
+    padding: 1.1em 1em;
+  }
+
+  #loginNav.navbar-shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #023d67; 
+  }
+  #loginNav.navbar-shrink .navbar-brand {
+    font-size: 1.4em;
+    padding: 12px 0;
+  }
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} 
+
+input, button {
+  border: none;
+  outline: none;
+  background: none;
+  font-family: 'Montserrat';
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+input, button {
+  border: none;
+  outline: none;
+  background: none;
+  font-family: 'Montserrat';
+}
+
+.logincont {
+    overflow: hidden;
+    position: relative;
+    width: 900px;
+    height: 600px;
+    margin: 0 auto 0  ;
+    background: #fff;
+  }
+
+.form {
+  width: 640px;
+  transition: -webkit-transform 1.2s ease-in-out;
+  transition: transform 1.2s ease-in-out;
+  transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
+  padding: 50px 30px 0;
+}
+
+.sub-cont {
+  overflow: hidden;
+  position: absolute;
+  left: 640px;
+  top: 0;
+  width: 900px;
+  height: 100%;
+  padding-left: 260px;
+  background: #fff;
+  transition: -webkit-transform 1.2s ease-in-out;
+  transition: transform 1.2s ease-in-out;
+  transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
+}
+.logincont.s--signup .sub-cont {
+  -webkit-transform: translate3d(-640px, 0, 0);
+          transform: translate3d(-640px, 0, 0);
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  width: 260px;
+  height: 36px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+.img {
+  overflow: hidden;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 260px;
+  height: 600px;
+  padding-top: 380px;
+}
+.img:before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 900px;
+  height: 100%;
+  background-size: cover;
+  background-color: #03749c; 
+  transition: -webkit-transform 1.2s ease-in-out;
+  transition: transform 1.2s ease-in-out;
+  transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
+}
+.img:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.logincont.s--signup .img:before {
+  -webkit-transform: translate3d(640px, 0, 0);
+          transform: translate3d(640px, 0, 0);
+}
+.img_text {
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  top: 150px;
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+  color: #fff;
+  transition: -webkit-transform 1.2s ease-in-out;
+  transition: transform 1.2s ease-in-out;
+  transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
+  font-family: 'Montserrat';
+}
+.img_text h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+.img_text p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.logincont.s--signup .img_text.m--up {
+  -webkit-transform: translateX(520px);
+          transform: translateX(520px);
+}
+.img_text.m--in {
+  -webkit-transform: translateX(-520px);
+          transform: translateX(-520px);
+}
+.logincont.s--signup .img_text.m--in {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+.img_btn {
+  overflow: hidden;
+  z-index: 2;
+  position: relative;
+  width: 100px;
+  height: 36px;
+  margin: 0 auto;
+  background: transparent;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 15px;
+  cursor: pointer;
+  top: 140px;
+  font-family: 'Montserrat';
+}
+
+.img_btn:focus {
+  outline: none;
+}
+
+.img_btn:after {
+  content: '';
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #fff;
+  border-radius: 30px;
+}
+.img_btn span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: -webkit-transform 1.2s;
+  transition: transform 1.2s;
+  transition: transform 1.2s, -webkit-transform 1.2s;
+}
+.img_btn span.m--in {
+  -webkit-transform: translateY(-72px);
+          transform: translateY(-72px);
+}
+.logincont.s--signup .img_btn span.m--in {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.logincont.s--signup .img_btn span.m--up {
+  -webkit-transform: translateY(72px);
+          transform: translateY(72px);
+}
+
+h2 {
+  width: 100%;
+  font-size: 26px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  width: 300px;
+  margin: 25px auto 0;
+  text-align: center;
+}
+label span {
+  font-size: 12px;
+  color: #cfcfcf;
+  text-transform: uppercase;
+}
+input {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  padding-bottom: 5px;
+  font-size: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.forgot-pass {
+  margin-top: 60px;
+  margin-bottom: -30px;
+  text-align: center;
+  font-size: 12px;
+  color: #cfcfcf;
+}
+
+.submit {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  width: 300px;
+  background: #d4af7a;
+  text-transform: uppercase;
+}
+
+
+.submit:focus {
+  transform: scale(1.01);  
+}
+
+.fb-btn {
+  border: 2px solid #d3dae9;
+  color: #8fa1c7;
+  width: 300px
+}
+
+.fb-btn:focus {
+  outline: none;
+  transform: scale(1.01); 
+}
+
+.fb-btn span {
+  font-weight: bold;
+  color: #455a81;
+}
+
+.sign-in {
+  transition-timing-function: ease-out;
+  margin-top: 100px;
+  font-family: 'Montserrat';
+}
+
+.hide-show {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.hide-show span{
+  border: 1px solid grey;
+  padding: 3px 15px 3px 15px;
+}
+
+.btnpass:hover {
+  cursor: pointer;
+}
+
+.logincont.s--signup .sign-in {
+  transition-timing-function: ease-in-out;
+  transition-duration: 1.2s;
+  -webkit-transform: translate3d(640px, 0, 0);
+          transform: translate3d(640px, 0, 0);
+}
+
+.field-icon {
+  float: right;
+  margin-left: -25px;
+  margin-top: -25px;
+  position: relative;
+  z-index: 2;
+}
+
+.sign-up {
+  -webkit-transform: translate3d(-900px, 0, 0);
+          transform: translate3d(-900px, 0, 0);
+  margin-top: 100px;
+  font-family: 'Montserrat';
+}
+.logincont.s--signup .sign-up {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }

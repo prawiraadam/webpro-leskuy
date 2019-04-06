@@ -2,43 +2,120 @@
 <html>
 <head>
 	<title>Leskuy! Login</title>
-	<link href="login css.css" rel="stylesheet" type="text/css">
+		  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> -->
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab:300'><!-- library font yang dipakai -->
+  <link rel='stylesheet' href='css/flickity.min.css'><!-- untuk import ke situs template -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Bootstrap core CSS -->
+  <link href="source/bootstrap/css/bootstrap.min.css" rel="stylesheet"><!--css bootstrap supaya letak navbar rapi-->
+  <link href="source/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- untuk icon navbar saat responsive layar kecil -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.5/flickity.pkgd.min.js'></script> <!-- carousel -->
+  <!-- Import untuk navbar -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- parallax -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> <!-- sidebar responsive -->
+  <link rel="stylesheet" href="css/style.css">
+     <!-- sidebar responsive -->
 </head>
-	<div class="container">
-		<p>Login to Leskuy!</p>
-		<form>
-			<input class="butt_input" type="text" placeholder="Username"><br>
-			<input class="butt_input" type="Password" placeholder="Password"><br>
-			<input class="butt_submit" type="submit" value="Login">
-		</form>
-		<br><a href="#ForgotPass">Forgot password ?</a>
-		<p>Don't have an account ? <a href="Signup.html">Sign up</a> now! </p>
-	</div>
-	<footer>
-		<p>Copyright &copy 2019 Leskuy Corp.</p>
-		<!-- <div class="sect">
-			<ul>
-				<li><a href="#">About Us</a></li>
-				<li><a href="#">Contact</a></li>
-				<li><a href="#">Media Gallery</a></li>
-			</ul>
-		</div>
-		
-		<div class="sect">
-			<ul>
-				<li><a href="#">Terms & Conditions</a></li>
-				<li><a href="#">Privacy Policy</a></li>
-			</ul>
-		</div>
-
-		<div class="sect">
-			<ul>
-				<li><a href="#">*isi gambar</a></li>
-				<li><a href="#">*isi gambar</a></li>
-				<li><a href="#">*isi gambar</a></li>
-				<li><a href="#">*isi gambar</a></li>
-			</ul>
-		</div> -->
-	</footer>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="loginNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="home.html">KATA PIJAR</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars" style="color: white"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#2">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#3">Programs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="log in.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<body class="login">
+<div class="logincont">
+  		<div class="form sign-in">
+    		<h2>Welcome!</h2>
+    			<label>
+      				<span>Email</span>
+      				<input type="email" />
+    			</label>
+    			<label class="labelpass">
+     				<span>Password</span>
+              <input class="password" required name="login-pw" type="password" />
+              <div class="hide-show">
+                  <span class="btnpass">Show Password</span>
+              </div>
+    			</label>
+    			<!-- <p class="forgot-pass" href="#">Forgot password?</p> -->
+          <p class="forgot-pass"><a href="#">Forgot password?</a></p>
+   			<button type="button" class="submit">Sign In</button>
+    		<button type="button" class="fb-btn">Connect with <span>facebook</span></button>
+  		</div>
+  	<div class="sub-cont">
+    	<div class="img">
+      		<div class="img_text m--up">
+        		<h2>Are You Ready?</h2>
+        		<p>Sign up now and be part of us!</p>
+      		</div>
+      		<div class="img_text m--in">
+        		<h2>Already Done?</h2>
+        		<p>Start your journey!</p>
+      		</div>
+      		<div class="img_btn">
+        		<span class="m--up">Sign Up</span>
+        		<span class="m--in">Sign In</span>
+      		</div>
+    	</div>
+    	<div class="form sign-up">
+    	  	<h2>Fill your Data!</h2>
+    	 		<label>
+    	    		<span>Name</span>
+    	    		<input type="text" />
+    	  		</label>
+    	  		<label>
+    	    		<span>Email</span>
+    	    		<input type="email" />
+    	  		</label>
+    	  		<label>
+    	    		<span>Password</span>
+    	    		<input type="password" />
+    	  		</label>
+    	  	<button type="button" class="submit">Sign Up</button>
+    	  	<button type="button" class="fb-btn">Join with <span>facebook</span></button>
+    	</div>
+  	</div>
+</div>
 </body>
+<div class="content">
+</div>
+    <footer id="myFooter">
+        <div class="container">
+            <ul>
+                <li><a href="#">Company Information</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Terms of service</a></li>
+            </ul>
+        <p class="footer-copyright">© 2016 Copyright Kata Pijar</p>
+        </div>
+        <div class="footer-social">
+            <a href="#" class="social-icons"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="social-icons"><i class="fa fa-instagram"></i></a>
+            <a href="#" class="social-icons"><i class="fa fa-twitter"></i></a>
+        </div>
+    </footer>
+<script src="js/login.js"></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
 </html>
