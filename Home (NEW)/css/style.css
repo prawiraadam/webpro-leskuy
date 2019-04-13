@@ -1,35 +1,25 @@
 /*HOMEPAGE*/
-body {
-  overflow-x: hidden;
-}
-
-.nav-link {
-  color: #fed136;
-}
-
-.navlink:hover {
-  color: #FFD700;
-}
-
 #mainNav {
-  background-color: transparent; 
-  /*untuk warna bg navbar setelah responsive layar HP*/
+  background-color: #fed136;
 }
 
-#mainNav .navbar-toggler { /*Memposisikan sidebar bootstrap*/
+#mainNav .navbar-toggler { 
+   text-transform: uppercase;
   font-size: 16px;
-  margin-right: -100px;
+  margin-right: -40px;
   margin-bottom: 8px;
-  padding: 13px;
-  color: black;
+  padding-top: 5px;
+  padding-bottom: 5px;
   border: 0;
-  background-color: #023d67;  
-  font-family: 'Roboto';
+  background-color: #fed136;  
+  font-family: 'Montserrat';
+  color: black;
+  position: absolute;
+  right: 20px;
 }
 
-#mainNav .navbar-brand {
-  color: white;
-  font-family: 'Roboto';
+#mainNav .navbar-toggler:focus {
+  outline: 0;
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
@@ -38,18 +28,21 @@ body {
 
 #mainNav .navbar-nav .nav-item .nav-link {
   font-size: 16px;
+  font-weight: 400;
   letter-spacing: 1px;
-  color: white;
-  font-family: 'Roboto';
+  color: black;
+  font-family: 'Montserrat';
 }
+
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #fed136;
-}
+  color: white;
+} 
 
-@media (min-width: 690px) {
+
+@media (min-width: 992px) {
   #mainNav {
-    padding-top: 20px;
+    padding-top: 25px;
     padding-bottom: 25px;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
@@ -57,11 +50,10 @@ body {
     background-color: transparent;
   }
   #mainNav .navbar-brand {
-    font-size: 1.3em;
+    font-size: 1.75em;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
   }
-
   #mainNav .navbar-nav .nav-item .nav-link {
     padding: 1.1em 1em !important;
   }
@@ -69,13 +61,10 @@ body {
   #mainNav.navbar-shrink {
     padding-top: 0;
     padding-bottom: 0;
-    background-color: #023d67; 
-  }
-  #mainNav.navbar-shrink .navbar-brand {
-    font-size: 1.4em;
-    padding: 12px 0;
+    background-color: #fed136;
   }
 }
+
 /*disesuaiin sama gambar background*/
 
 /*FILE ASLI*/
@@ -87,6 +76,8 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
+  opacity: 0.35;
+  background-color: #9A9A9A;
 }
 
 .hero-slider {
@@ -94,29 +85,33 @@ body {
   height: 100vh;
   overflow: hidden;
 }
+
 .hero-slider .carousel-cell {
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-color: rgba(154, 154, 154, 0.1);
 }
+
 .hero-slider .carousel-cell .inner {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  color: white;
   text-align: center;
 }
+
 .hero-slider .carousel-cell .inner .subtitle {
-  font-family: "Roboto Slab", serif;
+  font-family: "Montserrat", serif;
   font-size: 2.2rem;
   line-height: 1.2em;
   letter-spacing: 3px;
-  color: rgba(255, 255, 255);
+  color: black;
   margin-bottom: 10px;
 }
+
 .hero-slider .carousel-cell .inner .title {
   font-family: "Montserrat", sans-serif;
   font-size: 3rem;
@@ -124,55 +119,65 @@ body {
   text-transform: uppercase;
   letter-spacing: 3px;
   margin-bottom: 40px;
+  color: black;
 }
+
 .hero-slider .carousel-cell .inner .btn {
-  border: 1px solid #fff;
+  border: 1px solid black;
   padding: 14px 18px;
   text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
-  font-size: 0.8rem;
+  font-family: "Montserrat";
+  font-size: 13px;
   letter-spacing: 3px;
-  color: #fff;
+  color: black;
   text-decoration: none;
   transition: all .2s ease;
 }
+
 .hero-slider .carousel-cell .inner .btn:hover {
-  background: #fff;
-  color: #000;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
 }
+
 .hero-slider .flickity-prev-next-button {
   width: 80px;
   height: 80px;
   background: transparent;
 }
+
 .hero-slider .flickity-prev-next-button:hover {
   background: transparent;
 }
+
 .hero-slider .flickity-prev-next-button .arrow {
-  fill: white;
+  fill: black;
 }
+
 .hero-slider .flickity-page-dots {
   bottom: 30px;
+  text-align: center;
+  color: black;
 }
+
 .hero-slider .flickity-page-dots .dot {
   width: 30px;
   height: 4px;
-  background: rgba(255, 255, 255, 1);
   border: 0 solid white;
   border-radius: 0;
 }
+
 .hero-slider .flickity-page-dots .dot.is-selected {
   background: #fec503;
   border: 0 solid #fec503;
 }
 
-@media screen and (max-width: 620px) {
+@media screen (max-width: 620px) {
   .carousel-cell .inner {
     width: 100%;
     display: block;
+    text-align: center;
   }
 }
-
 /*CARDS*/
 
 /* Float four columns side by side */
@@ -182,22 +187,32 @@ body {
   font-family: 'Montserrat';
 }
 
-h2 {
+.captsub {
   letter-spacing: 1px;
   text-align: center;
+  margin-bottom: 50px;  
+  margin-top: 100px;
+  border-top: 3px solid black;
+  border-right: 3px solid black;
+  border-left: 3px solid black;
+}
+
+.captsub h2 {
+  font-size: 40px;
+  letter-spacing: 5px;
+  padding-top: 40px;
 }
 
 .column {
   float: left;
   width: 25%;
   padding: 0 16px;
-  border-radius: 20px;
 }
 
 /* Remove extra left and right margins, due to padding */
 .row {margin: 0 -5px;}
 
- Clear floats after the columns 
+ /*Clear floats after the columns*/
 .row:after {
   content: "";
   display: table;
@@ -227,76 +242,92 @@ h2 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
   padding: 16px;
   text-align: center;
-  background-color: #f1f1f1;
-}
-.subbtn {
-  margin-top: 10px;
-  border: 1px solid black;
-  border-radius: 3px;
-  background-color: #03749c;
-  color: white;
 }
 
-.subbtn .btn-block:active {
-  background-color: #15b1d7;
-  color: white;
+.subbtn {
+  margin-top: 50px;
+  border-radius: 3px;
+  background-color: white;
+  border-bottom: 3px solid black;
+  border-right: 3px solid black;
+  border-left: 3px solid black;
+}
+
+.btnblcktxt {
+  color: black;
+  margin-bottom: 40px;  
+}
+
+.subbtn .btnblcktxt {
+  font-family: 'Montserrat';
+  font-size: 20px
+}
+
+.subbtn .btn-block:focus {
+  text-decoration: none;
+  outline: 0;
 }
 
 .subbtn .btn-block:hover {
-  transform: scale(1.05);
+  color: #fed136;
 }
 
 /*----------------FOOTER-------------------*/
 
-#myFooter{
+#footers{
     padding-top:32px;
-    background-color: #03749c;
+    background-color: #231F20;
+    margin-top: 100px;
+    font-family: 'Montserrat';
 }
 
-#myFooter .container{
+#footers .container{
     text-align: center;
+    border-bottom: 1px solid white;
 }
 
-#myFooter .footer-copyright{
-    margin-bottom: 35px;
+#footers .footer-copyright{
     text-align: center;
     color: white;
 }
 
-#myFooter ul{
+#footers ul{
     list-style-type: none;
     padding: 0;
-    margin-bottom: 18px;
+    margin-bottom: 25px;
 }
 
-#myFooter li{
+#footers li{
     display: inline-block;
     margin: 0px 15px;
     line-height: 2;
 }
 
-#myFooter a{
+#footers a{
     color: white;
     font-size: 18px;
     text-decoration: none;
 }
 
-#myFooter a:hover {
+#footers a:hover {
   color: #fed136;
 }
 
-#myFooter .footer-social{
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #023d67;
+#footers .footer-list {
+  border-bottom: 1px solid white; 
+  padding-bottom: 25px
 }
 
-#myFooter .fa{
+#footers .footer-social{
+    text-align: center;
+    padding-bottom: 10px;
+    background-color: #231F20;
+}
+
+#footers .fa{
     font-size: 25px;
     margin-right: 15px;
     margin-left: 20px;
-    background-color: white;
     color: #BDBDBD;
     border-radius: 50%;
     height: 40px;
@@ -307,164 +338,81 @@ h2 {
     transition:color 0.2s;
 }
 
-#myFooter .fa-facebook:hover{
+#footers .fa-facebook:hover{
    color: #DAA520 ;
 }
 
-#myFooter .fa-twitter:hover{
+#footers .fa-twitter:hover{
     color: #DAA520  ;
 
 }
 
-#myFooter .fa-instagram:hover{
+#footers .fa-instagram:hover{
     color: #DAA520;
 } 
 
-/*--------------Sign Up--------------*/
-
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
-
-
-.pagepaket {
-    margin: 0;
-    font-size: .9rem;
-    font-weight: 400;
-    line-height: 1.6;
-    color: black;
-    text-align: left;
-    background-color: #f5f8fa;
-}
-
-.navbar-laravel
-{
-    box-shadow: 0 2px 4px rgba(0,0,0,.04);
-    background-color: rgba(161,161,161,0.2);
-    color: white;
-}
-
-.navbar-brand , .nav-link, .my-form, .login-form
-{
-    font-family: Raleway, sans-serif;
-}
-
-.my-form
-{
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-}
-
-.my-form .row
-{
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.login-form
-{
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-}
-
-.login-form .row
-{
-    margin-left: 0;
-    margin-right: 0;
-}
-
-
 /*---------------LOGIN PAGE------------*/
 
-.login {
-  background: url("img/picture1.jpg");
-}
-
 #loginNav {
-  background-color: #023d67; 
-  /*untuk warna bg navbar setelah responsive layar HP*/
+  background-color: #fed136;
 }
 
-.fa-bars {
-  font-size: 1.3em; /*ubah ukuran sidebar*/
-}
-
-#loginNav .navbar-toggler { /*Memposisikan sidebar bootstrap*/
+#loginNav .navbar-toggler { 
+  text-transform: uppercase;
   font-size: 16px;
-  margin-right: -100px;
+  margin-right: -40px;
   margin-bottom: 8px;
-  padding: 13px;
-  color: black;
+  padding-top: 5px;
+  padding-bottom: 5px;
   border: 0;
-  background-color: #023d67;  
-  font-family: 'Roboto';
+  background-color: #fed136;  
+  font-family: 'Montserrat';
+  color: black;
+  position: absolute;
+  right: 20px;
 }
 
-#loginNav .navbar-brand { /*logo navbar kata pijar*/
-  color: white;
-  font-family: 'Roboto';
+#loginNav .navbar-toggler:focus {
+  outline: 0;
 }
 
-#loginNav .navbar-brand.active, #mainNav .navbar-brand:active, #loginNav .navbar-brand:focus, #loginNav .navbar-brand:hover {
+#loginNav .navbar-brand.active, #loginNav .navbar-brand:active, #loginNav .navbar-brand:focus, #loginNav .navbar-brand:hover {
   color: #fec503;
 }
 
-#loginNav .navbar-nav .nav-item .nav-link { /*manage list di navbar*/
+#loginNav .navbar-nav .nav-item .nav-link {
   font-size: 16px;
+  font-weight: 400;
   letter-spacing: 1px;
-  color: white;
-  font-family: 'Roboto';
+  color: black;
+  font-family: 'Montserrat';
 }
 
-#loginNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #fed136;
-}
+
+#loginNav .navbar-nav .nav-item .nav-link.active, #loginNav .navbar-nav .nav-item .nav-link:hover {
+  color: white;
+} 
 
 @media (min-width: 690px) {
   #loginNav {
-    padding-top: 3px;
-    padding-bottom: 3px;
+    padding-top: 1px;
+    padding-bottom: 1px;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
-    background-color: #023d67;
-  }
-  #loginNav .navbar-brand {
-    font-size: 1.3em;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
+    background-color: #fed136;
   }
 
   #loginNav .navbar-nav .nav-item .nav-link {
     padding: 1.1em 1em;
   }
 
-  #loginNav.navbar-shrink {
-    padding-top: 0;
-    padding-bottom: 0;
-    background-color: #023d67; 
-  }
-  #loginNav.navbar-shrink .navbar-brand {
-    font-size: 1.4em;
-    padding: 12px 0;
-  }
 }
 
-*, *:before, *:after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-} 
-
 input, button {
-  border: none;
   outline: none;
   background: none;
   font-family: 'Montserrat';
-}
-
-*, *:before, *:after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 input, button {
@@ -474,29 +422,30 @@ input, button {
   font-family: 'Montserrat';
 }
 
-.logincont {
+.logincont { /*container login form*/
     overflow: hidden;
     position: relative;
     width: 900px;
     height: 600px;
-    margin: 0 auto 0  ;
+    margin: 0 auto -100px;
     background: #fff;
   }
 
-.form {
+.form { /*untuk login form*/
   width: 640px;
   transition: -webkit-transform 1.2s ease-in-out;
   transition: transform 1.2s ease-in-out;
   transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
-  padding: 50px 30px 0;
+  padding: 30px 30px 0;
+  margin-top: 500px;  
 }
 
-.sub-cont {
+.sub-cont { /*untuk bagian sebelah form*/
   overflow: hidden;
   position: absolute;
   left: 640px;
   top: 0;
-  width: 900px;
+  /*width: 900px;*/
   height: 100%;
   padding-left: 260px;
   background: #fff;
@@ -542,7 +491,7 @@ button:focus {
   width: 900px;
   height: 100%;
   background-size: cover;
-  background-color: #03749c; 
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/loginpic.jpg); /*membuat gambar sedikit gelap*/
   transition: -webkit-transform 1.2s ease-in-out;
   transition: transform 1.2s ease-in-out;
   transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
@@ -563,11 +512,11 @@ button:focus {
   z-index: 2;
   position: absolute;
   left: 0;
-  top: 150px;
+  top: 130px;
   width: 100%;
   padding: 0 20px;
   text-align: center;
-  color: #fff;
+  color: white;
   transition: -webkit-transform 1.2s ease-in-out;
   transition: transform 1.2s ease-in-out;
   transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
@@ -584,7 +533,8 @@ button:focus {
 }
 .logincont.s--signup .img_text.m--up {
   -webkit-transform: translateX(520px);
-          transform: translateX(520px);
+          transform: translateX(520px);/*
+   margin-top: 10px;*/
 }
 .img_text.m--in {
   -webkit-transform: translateX(-520px);
@@ -638,6 +588,7 @@ button:focus {
   transition: transform 1.2s;
   transition: transform 1.2s, -webkit-transform 1.2s;
 }
+
 .img_btn span.m--in {
   -webkit-transform: translateY(-72px);
           transform: translateY(-72px);
@@ -663,12 +614,14 @@ label {
   margin: 25px auto 0;
   text-align: center;
 }
-label span {
+
+label span { /*label dari input box*/
   font-size: 12px;
-  color: #cfcfcf;
+  color: #ABABAB;
   text-transform: uppercase;
 }
-input {
+
+input { /*input text box*/
   display: block;
   width: 100%;
   margin-top: 5px;
@@ -678,6 +631,8 @@ input {
   text-align: center;
 }
 
+
+/*CSS BUTTON*/
 .forgot-pass {
   margin-top: 60px;
   margin-bottom: -30px;
@@ -686,17 +641,33 @@ input {
   color: #cfcfcf;
 }
 
-.submit {
+.link-forgot:hover {
+  text-decoration: none;
+}
+
+.loginbtn {
   margin-top: 40px;
   margin-bottom: 20px;
   width: 300px;
-  background: #d4af7a;
+  background: #fed136;
   text-transform: uppercase;
 }
 
 
-.submit:focus {
+.loginbtn:focus {
   transform: scale(1.01);  
+}
+
+.signupbtn {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 300px;
+  background: #fed136;
+  text-transform: uppercase;
+}
+
+.signupbtn:focus {
+  transform: scale(1.01);
 }
 
 .fb-btn {
@@ -714,49 +685,174 @@ input {
   font-weight: bold;
   color: #455a81;
 }
+/*---------------SHOW PASSWORD---------------*/
 
-.sign-in {
-  transition-timing-function: ease-out;
-  margin-top: 100px;
-  font-family: 'Montserrat';
-}
-
-.hide-show {
-  margin-top: 3px;
+.hide-show { /*div password*/
+  margin-top: 40px;
   margin-bottom: 3px;
 }
 
-.hide-show span{
+.hide-show span{ /*button show password*/
   border: 1px solid grey;
+  border-radius: 25px;
   padding: 3px 15px 3px 15px;
 }
 
-.btnpass:hover {
+.btnpass:hover { /*text show password*/
   cursor: pointer;
 }
 
-.logincont.s--signup .sign-in {
+.btnpasstxt { /*text show password*/
+  font-style: normal;
+  text-decoration: none;
+}
+
+.logincont.s--signup .sign-in { /*animasi sliding form sign in*/
   transition-timing-function: ease-in-out;
   transition-duration: 1.2s;
   -webkit-transform: translate3d(640px, 0, 0);
           transform: translate3d(640px, 0, 0);
 }
 
-.field-icon {
-  float: right;
-  margin-left: -25px;
-  margin-top: -25px;
-  position: relative;
-  z-index: 2;
+.sign-in { /*form sign in*/
+  transition-timing-function: ease-out;
+  margin-top: 100px;
+  font-family: 'Montserrat';
 }
 
-.sign-up {
+.sign-up { /*untuk form sign up*/
   -webkit-transform: translate3d(-900px, 0, 0);
           transform: translate3d(-900px, 0, 0);
-  margin-top: 100px;
+  margin-top: 65px;
   font-family: 'Montserrat';
 }
 .logincont.s--signup .sign-up {
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
 }
+
+/*about us page*/
+
+
+
+#aboutusNav {
+  background-color: #fed136;
+}
+
+#aboutusNav .navbar-toggler { 
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-right: -40px;
+  margin-bottom: 8px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 0;
+  background-color: #fed136;  
+  font-family: 'Montserrat';
+  color: black;
+  position: absolute;
+  right: 20px;
+}
+
+#aboutusNav .navbar-toggler:focus {
+  outline: 0;
+}
+
+#aboutusNav .navbar-brand.active, #aboutusNav .navbar-brand:active, #aboutusNav .navbar-brand:focus, #aboutusNav .navbar-brand:hover {
+  color: #fec503;
+}
+
+#aboutusNav .navbar-nav .nav-item .nav-link {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: black;
+  font-family: 'Montserrat';
+}
+
+
+#aboutusNav .navbar-nav .nav-item .nav-link.active, #aboutusNav .navbar-nav .nav-item .nav-link:hover {
+  color: white;
+} 
+
+@media (min-width: 690px) {
+  #aboutusNav {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+    background-color: #fed136;
+  }
+
+  #aboutusNav .navbar-nav .nav-item .nav-link {
+    padding: 1.1em 1em;
+  }
+
+}
+
+
+#team {
+  margin-top: 70px;
+  font-family: 'Montserrat';
+}
+
+.headingtxt {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 900px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.profileimg {
+  border-radius: 30px;
+}
+
+.profiledata {
+  margin-top: 10px;
+}
+
+.title {
+  color: grey;
+}
+
+.emailtxt {
+  font-size: 14px;
+}
+
+.contactbtn {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 30px
+}
+
+.contactbtn:hover {
+  background-color: #555;
+} 

@@ -1,87 +1,85 @@
 <!DOCTYPE html>
-<html lang="en" >
-
+<html>
 <head>
-  <meta charset="UTF-8">
   <title>KATA PIJAR</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> -->
+  <link rel="shortcut icon" href="img/logotitle.ico"/>
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab:300'><!-- library font yang dipakai -->
   <link rel='stylesheet' href='css/flickity.min.css'><!-- untuk import ke situs template -->
   <link rel="stylesheet" href="css/style.css">
   <!-- Bootstrap core CSS -->
   <link href="source/bootstrap/css/bootstrap.min.css" rel="stylesheet"><!--css bootstrap supaya letak navbar rapi-->
   <link href="source/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- untuk icon navbar saat responsive layar kecil -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.5/flickity.pkgd.min.js'></script> <!-- carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!-- untuk icon navbar saat responsive layar kecil -->
+  <script src='js/flickity.pkgd.min.js'></script> <!-- plugin flickity carousel -->
   <!-- Import untuk navbar -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- parallax -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> <!-- sidebar responsive -->
+  <link rel="stylesheet" href="css/style.css">
+
 </head>
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="home.html">KATA PIJAR</a>
+    <div class="container" id="loginnavcont">
+      <a class="navbar-brand js-scroll-trigger" href="home.html"><img src="img/logo.png" width="100px"></a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars" style="color: white"></i>
+        <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#1">Home</a>
+            <a class="nav-link js-scroll-trigger" href="#1">Beranda</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#2">Courses</a>
+            <a class="nav-link js-scroll-trigger" href="#2">Kursus</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#3">Programs</a>
+            <a class="nav-link js-scroll-trigger" href="#3">Subjek</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="log in.html">Login</a>
+            <a class="nav-link js-scroll-trigger" href="login.html">Login</a>
           </li>
       </div>
     </div>
   </nav>
 <body>
     <div class="hero-slider" data-flickity='{ "wrapAround": true }'><!-- A hero slider is defined as a large, featured series of images prominently displayed on the homepage. -->
-        <div class="carousel-cell" style="background-image:url(img/picture1.jpg);">
+        <div class="carousel-cell" style="background-image:url(img/picture1.png);">
             <div class="overlay">
             </div>
             <div class="inner">
                 <h3 class="subtitle">KATA PIJAR</h3>
                 <h2 class="title">Make Your Dreams Come True!</h2>
-                <a href="#" target="_blank" class="btn">Learn more</a>
+                <a href="#" target="_blank" class="btn">Pelajari</a>
             </div>
         </div>
-        <div class="carousel-cell" style="background-image:url(img/picture2.jpg);">
+        <div class="carousel-cell" style="background-image:url(img/picture2.png);">
             <div class="overlay">
             </div>
             <div class="inner">
                 <h3 class="subtitle">Professional Teachers</h3>
                 <h2 class="title">Your Success is Our Priority</h2>
-                <a href="#" target="_blank" class="btn">Learn More</a>
+                <a href="#" target="_blank" class="btn">Pelajari</a>
             </div>
         </div>
-        <div class="carousel-cell" style="background-image:url(img/picture3.jpg);">
+        <div class="carousel-cell" style="background-image:url(img/picture3.png);">
             <div class="overlay">
             </div>
             <div class="inner">
                 <h3 class="subtitle">Join Us Now!</h3>
                 <h2 class="title">What are You Waiting For?</h2>
-                <a href="#" target="_blank" class="btn">Get Yours!</a>
+                <a href="login.html" target="_blank" class="btn">Gabung</a>
             </div>
         </div>
     </div>
     <div class="container" id="cardcont">
         <div class="captsub">
-          <h2 class="isicapt">Our Subjects</h2>
+          <h2>Our Subjects</h2>
         </div>
         <div class="row">
             <div class="column">
                 <div class="card">
                     <h3>Computer</h3>
                     <h3>Science</h3>
-                    <p> the study of processes that interact with data and that can be represented as data in the form of programs.</p>
+                    <p>studi tentang proses berinteraksi dengan data berupa masalah yang direpresentasikan dalam bentuk program.</p>
                 </div>
             </div>
 
@@ -89,7 +87,7 @@
                 <div class="card">
                     <h3>Data</h3>
                     <h3>Science</h3>
-                    <p>a field to extract knowledge from structured and unstructured data.</p>
+                    <p>bidang untuk mengekstrak pengetahuan dengan berdasarkan data terstruktur dan tidak terstruktur.</p>
                 </div>
             </div>
   
@@ -97,7 +95,7 @@
                 <div class="card">
                     <h3>Socials &</h3>
                     <h3>Politics</h3>
-                    <p>fields of philosophy dealing with the role of the individual in society, as well as the role of government.</p>
+                    <p>bidang filsafat yang berhubungan dengan peran individu dalam masyarakat, dan peran pemerintah.</p>
                 </div>
             </div>
   
@@ -105,86 +103,36 @@
                 <div class="card">
                     <h3>Arts &</h3>
                     <h3>Humanities</h3>
-                    <p>fields of philosophy dealing with the role of the individual in society, as well as the role of government.</p>
+                    <p>ilmu yang mempelajari cara membuat atau mengangkat manusia menjadi lebih manusiawi dan berbudaya.</p>
                 </div>
             </div>
         </div>
         <div class="text-center subbtn">
-            <a class="btn btn-block" style="color: white" href="#" role="button">
-            Browse All Subjects
+            <a class="btn btn-block btnblcktxt" href="#" role="button">
+            Lihat Semua Subjek
             </a>
         </div>
     </div>
-
-    <!-- INI OPSI FOOTER KEDUA -->
-
-    <!-- Footer -->
-<!--     <footer class="footcont">
-        <div class="container">
-            <div class="row" id="foottxt">
-                <div class="col-sm-3">
-                    <h2 class="logo"><a href="#"> LOGO
-                     </a></h2>
-                </div>
-                <div class="col-sm-2">
-                    <h5>About us</h5>
-                    <ul>
-                        <li><a href="#">Profile</a></li>
-                        <li><a href="#">Achievements</a></li>
-                        <li><a href="#">Reviews</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-2">
-                    <h5>Support</h5>
-                    <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Help</a></li>
-                        <li><a href="#">Forums</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-2">
-                    <h5>Legal</h5>
-                    <ul>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Terms of Use</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright">
-            <p>© 2016 Copyright Kata Pijar </p>
-        </div>
-    </footer> -->
-  <!-- Footer -->
 <div class="content">
 </div>
-    <footer id="myFooter">
+    <footer id="footers">
         <div class="container">
-            <ul>
-                <li><a href="#">Company Information</a></li>
-                <li><a href="#">Contact us</a></li>
-                <li><a href="#">Reviews</a></li>
-                <li><a href="#">Terms of service</a></li>
-            </ul>
-        <p class="footer-copyright">© 2016 Copyright Kata Pijar</p>
-        </div>
-        <div class="footer-social">
+          <div class="footer-social">
             <a href="#" class="social-icons"><i class="fa fa-facebook"></i></a>
             <a href="#" class="social-icons"><i class="fa fa-instagram"></i></a>
             <a href="#" class="social-icons"><i class="fa fa-twitter"></i></a>
         </div>
+            <ul class="footer-list">
+                <li><a href="aboutus.html">Tentang Kami</a></li>
+                <li><a href="#">Hubungi Kami</a></li>
+                <li><a href="#">Tanya Kami</a></li>
+                <li><a href="#">Ketentuan Layanan</a></li>
+            </ul>
+            <p class="footer-copyright">&copy 2016 Kata Pijar. All Rights Reserved</p>
+        </div>
+        
     </footer>
 <!-- JAVASCRIPTS -->
-  <script src="js/landing.js"></script>
   <script src="js/navbar.js"></script>
 </body>
 </html>
