@@ -1,0 +1,51 @@
+html{
+	font-family: 'Roboto', sans-serif;
+}
+
+/*COLORS
+Yellow : #FFC107;
+Dark Gray : #373737;
+*/
+
+.col-9{
+	margin: 44px;	
+	width: 100%;
+	height: 634px;
+	text-align: center;
+	border-radius: 5px;
+	background-color: white;
+}
+
+.table-title{
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	margin-top: 16px;
+	margin-bottom: 0;
+	padding-bottom: 4px;
+	text-align: left;
+	background-color: #ffc107;
+	color: white;
+}
+
+.table-title h2{
+	padding: 8px;
+	margin-left: 36px; 
+	padding-bottom: 0;
+	color: #373737;
+}
+
+.thead{
+	background-color: #373737;
+	color: #FFC107;
+}
+
+#myBtn{
+	display: flex;
+	float: right;
+	margin-right: 60px;
+}
+
+.tablePages{
+	margin-left: 43%;
+	text-align: center;
+}
