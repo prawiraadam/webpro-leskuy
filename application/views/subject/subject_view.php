@@ -10,20 +10,24 @@
     <body> -->
 
     <div class="container">
-            <h1 class="center padding-top-35">DAFTAR SUBJEK</h1>
-            <div class="row">
+        <h1 class="center padding-top-35">DAFTAR SUBJEK</h1>
+        <div class="row">
+
+            <?php foreach ($subject as $s) {?>
 
                 <div class="column">
                     <a href="#" class="card">
-                        <img class="card-img-top" src="img/test.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="assets/img/<?php echo $s->sub_foto ?>" alt="Card image cap">
                         <div class="card-body">
-                            <p>Ilmu Komputer</p>
+                            <p><?php echo $s->sub_nama ?></p>
                         </div>
                     </a>
                 </div>
+            
+            <?php } ?>
 
-            </div>
         </div>
+    </div>
         
     <!-- </body>
 </html> -->
