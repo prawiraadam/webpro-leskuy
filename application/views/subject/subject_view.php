@@ -18,7 +18,7 @@
 
                 <div class="column">
                     <a href="#" class="card">
-                        <img class="card-img-top" src="assets/img/<?php echo $s->sub_foto ?>" alt="Card image cap">
+                        <img class="card-img-top" src="<?php echo base_url('assets/img/') ?><?php echo $s->sub_foto ?>" alt="Card image cap">
                         <div class="card-body">
                             <p><?php echo $s->sub_nama ?></p>
                         </div>

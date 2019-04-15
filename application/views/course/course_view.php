@@ -11,8 +11,10 @@
     <link rel="stylesheet" href="<?php echo base_url('assets/css/course_css.css');?>">
         <div class="title padding-top-70">
             <div class="container">
-                <h1 class="padding-top-70">Ilmu Komputer</h1>
-                <p>deskripsi</p>
+
+                <h1 class="padding-top-70"><?php echo $course[0]->sub_nama ?></h1>
+                <p class="padding-bot"><?php echo $course[0]->sub_desc?></p>
+                
             </div>
         </div>
 
