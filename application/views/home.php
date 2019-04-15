@@ -35,7 +35,16 @@
           <h2>Our Subjects</h2>
         </div>
         <div class="row">
+        <?php for ($i = 0; $i <4; $i++){ ?>
             <div class="column">
+                <div class="card h-100">
+                    <h3><?php echo $subject[$i]->sub_nama ?></h3>
+                    <p><?php echo $subject[$i]->sub_desc ?></p>
+                </div>
+            </div>
+        <?php } ?>
+
+            <!-- <div class="column">
                 <div class="card">
                     <h3>Computer</h3>
                     <h3>Science</h3>
@@ -65,7 +74,7 @@
                     <h3>Humanities</h3>
                     <p>ilmu yang mempelajari cara membuat atau mengangkat manusia menjadi lebih manusiawi dan berbudaya.</p>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="text-center subbtn">
             <a class="btn btn-block btnblcktxt" href="#" role="button">

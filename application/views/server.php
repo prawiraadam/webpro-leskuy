@@ -1,5 +1,5 @@
 <?php
-session_start();
+// session_start();
 
 // initializing variables
 $username = "";
@@ -11,6 +11,7 @@ $db = mysqli_connect('localhost', 'root', '', 'db_webpro_leskuy');
 
 // REGISTER USER
 if (isset($_POST['regbtn'])) {
+  echo "<script type='text/javascript'>alert('ashiaap');</script>";
   // receive all input values from the form
   $username = mysqli_real_escape_string($db, $_POST['name']);
   $email = mysqli_real_escape_string($db, $_POST['email']);
@@ -30,7 +31,7 @@ if (isset($_POST['regbtn'])) {
 
   // first check the database to make sure 
   // a user does not already exist with the same username and/or email
-  $user_check_query = "SELECT * FROM users WHERE username='$username' OR email='$email' LIMIT 1";
+  $user_check_query = "SELECT * FROM user WHERE username='$username' OR email='$email' LIMIT 1";
   $result = mysqli_query($db, $user_check_query);
   $user = mysqli_fetch_assoc($result);
   
@@ -45,7 +46,7 @@ if (isset($_POST['regbtn'])) {
   // Finally, register user if there are no errors in the form
   if (count($errors) == 0) {
   	$pass1 = md5($pass1);//encrypt the password before saving in the database
-  	$query = "INSERT INTO users (username, email, password) 
+  	$query = "INSERT INTO user (username, email, password) 
   			  VALUES('$username', '$email', '$pass1')";
   	mysqli_query($db, $query);
   	$message = "Terima kasih telah mendaftar, silakan login!";
@@ -70,7 +71,7 @@ if (isset($_POST['loginbtn'])) {
 
   if (count($errors) == 0) {
     $pass1 = md5($pass1);
-    $query = "SELECT * FROM users WHERE email='$email' AND password='$pass1'";
+    $query = "SELECT * FROM user WHERE email='$email' AND password='$pass1'";
     $results = mysqli_query($db, $query);
     if (mysqli_num_rows($results) == 1) {
       $_SESSION['email'] = $email;
