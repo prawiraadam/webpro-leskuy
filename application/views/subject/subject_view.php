@@ -11,17 +11,17 @@
         
     <link rel="stylesheet" href="<?php echo base_url('assets/css/subject_css.css');?>">   
     <div class="container">
-            <h1 class="center padding-top-70">DAFTAR SUBJEK</h1>
-            <div class="row">
+        <h1 class="center padding-top-70">DAFTAR SUBJEK</h1>
+        <div class="row">
 
-                <div class="column">
-                    <a href="#" class="card">
-                        <img class="card-img-top" src="<?php echo base_url('assets/img/kmptr.jpg')?>" alt="Card image cap">
-                        <div class="card-body">
-                            <p>Ilmu Komputer</p>
-                        </div>
-                    </a>
-                </div>
+            <div class="column">
+                <a href="#" class="card">
+                    <img class="card-img-top" src="<?php echo base_url('assets/img/kmptr.jpg')?>" alt="Card image cap">
+                    <div class="card-body">
+                        <p>Ilmu Komputer</p>
+                    </div>
+                </a>
+            </div>
 
             </div>
         </div>
