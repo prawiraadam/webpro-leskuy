@@ -7,7 +7,7 @@ class M_video extends CI_Model {
 	
 	public function Get_Video($course_id){
 		$this->db->select('*');
-		$this->db->from('videos');
+		$this->db->from('video');
 		$this->db->where('course_id',$course_id);
 		$query = $this->db->get();
 		return $query->result();
