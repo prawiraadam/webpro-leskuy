@@ -8,7 +8,8 @@
     </head>
 
     <body> -->
-
+        
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/subject_css.css');?>">   
     <div class="container">
         <h1 class="center padding-top-35">DAFTAR SUBJEK</h1>
         <div class="row">

@@ -1,0 +1,121 @@
+#aboutusNav {
+  background-color: #fed136;
+}
+
+#aboutusNav .navbar-toggler { 
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-right: -40px;
+  margin-bottom: 8px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 0;
+  background-color: #fed136;  
+  font-family: 'Roboto';
+  color: black;
+  position: absolute;
+  right: 20px;
+}
+
+#aboutusNav .navbar-toggler:focus {
+  outline: 0;
+}
+
+#aboutusNav .navbar-brand.active, #aboutusNav .navbar-brand:active, #aboutusNav .navbar-brand:focus, #aboutusNav .navbar-brand:hover {
+  color: #fec503;
+}
+
+#aboutusNav .navbar-nav .nav-item .nav-link {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: black;
+  font-family: 'Montserrat';
+}
+
+
+#aboutusNav .navbar-nav .nav-item .nav-link.active, #aboutusNav .navbar-nav .nav-item .nav-link:hover {
+  color: white;
+} 
+
+@media (min-width: 690px) {
+  #aboutusNav {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+    background-color: #fed136;
+  }
+
+  #aboutusNav .navbar-nav .nav-item .nav-link {
+    padding: 1.1em 1em;
+  }
+
+}
+
+
+#team {
+  margin-top: 70px;
+  font-family: 'Montserrat';
+}
+
+.headingtxt {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 900px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.profileimg {
+  border-radius: 30px;
+}
+
+.profiledata {
+  margin-top: 10px;
+}
+
+.title {
+  color: grey;
+}
+
+.emailtxt {
+  font-size: 14px;
+}
+
+.contactbtn {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 30px
+}
+
+.contactbtn:hover {
+  background-color: #555;
+} 

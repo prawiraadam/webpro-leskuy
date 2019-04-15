@@ -1,0 +1,12 @@
+body{
+	padding: 8%;
+}
+
+.col-2{
+	border-top: 5px solid #FFC107;
+	margin-right: 4em;
+}
+
+.title{
+	padding-top: 20px;
+}
