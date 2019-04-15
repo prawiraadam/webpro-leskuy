@@ -8,10 +8,10 @@
     </head>
 
     <body> -->
-    
-        <div class="title">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/course_css.css');?>">
+        <div class="title padding-top-70">
             <div class="container">
-                <h1>Ilmu Komputer</h1>
+                <h1 class="padding-top-70">Ilmu Komputer</h1>
                 <p>deskripsi</p>
             </div>
         </div>
@@ -22,7 +22,7 @@
             <?php foreach ($course as $c) { ?>
                 <div class="column">
                     <a href="<?php echo site_url('video/videos/')?><?php echo $c->course_id ?>" class="card">
-                        <img class="card-img-top" src="assets/img/<?php echo $c->course_foto ?>" alt="Card image cap">
+                        <!-- <img class="card-img-top" src="assets/img/<?php echo $c->course_foto ?>" alt="Card image cap"> -->
                         <div class="card-body">
                             <p class="subtitle"><?php echo $c->univ_id ?></p>
                             <p class="title"><?php echo $c->course_name ?></p>

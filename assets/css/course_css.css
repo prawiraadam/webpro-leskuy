@@ -83,6 +83,11 @@ li {
     height: 100%;
 }
 
+.padding-top-70{
+    padding: 70px 0 0 0;
+    margin-top: 70px;
+}
+
 .center{
     text-align: center;
 }
