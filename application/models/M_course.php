@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class M_web extends CI_Model {
+class M_course extends CI_Model {
 	
 	public function Getcourse(){
 		$this->db->select('*');
