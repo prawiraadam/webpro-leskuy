@@ -17,3 +17,4 @@ class video extends CI_Controller {
 		$this->load->view('page_header');
 		$this->load->view('video_page',['data'=>$data_video]);
 	}
+}

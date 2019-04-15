@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class M_course extends CI_Controller {
+class course extends CI_Controller {
 
 	public function __construct()
  	{
@@ -10,12 +10,12 @@ class M_course extends CI_Controller {
  		$this->load->model('M_course');
   	}
 
-	public function course()
+	public function index()
 	{
         $data_course = $this->M_course->Getcourse();
-		$this->load->view('header_view');
-        $this->load->view('course/course_view',['data'=>$data_course]);
-        $this->load->view('footer_view');
+		$this->load->view('login-navbar');
+        $this->load->view('course/course_view',['course'=>$data_course]);
+        $this->load->view('footer');
 	}
 
 	public function hapuscourse($sub_id)
