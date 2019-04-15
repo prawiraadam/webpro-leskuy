@@ -2,7 +2,7 @@
 <html>
 <body>
     <div class="hero-slider" data-flickity='{ "wrapAround": true }'><!-- A hero slider is defined as a large, featured series of images prominently displayed on the homepage. -->
-        <div class="carousel-cell" style="background-image:url(<?php echo base_url('assets/img/picture1.png');?>)">
+        <div class="carousel-cell" style="background-image:url(img/picture1.png);">
             <div class="overlay">
             </div>
             <div class="inner">
@@ -11,16 +11,16 @@
                 <a href="#" target="_blank" class="btn">Pelajari</a>
             </div>
         </div>
-        <div class="carousel-cell" style="background-image:url(<?php echo base_url('assets/img/picture2.png');?>)">
+        <div class="carousel-cell" style="background-image:url(img/picture2.png);">
             <div class="overlay">
             </div>
             <div class="inner">
-                <h3 class="subtitle">Professional Teachers</h3> 
+                <h3 class="subtitle">Professional Teachers</h3>
                 <h2 class="title">Your Success is Our Priority</h2>
                 <a href="#" target="_blank" class="btn">Pelajari</a>
             </div>
         </div>
-        <div class="carousel-cell" style="background-image:url(<?php echo base_url('assets/img/picture3.png');?>)">
+        <div class="carousel-cell" style="background-image:url(img/picture3.png);">
             <div class="overlay">
             </div>
             <div class="inner">
@@ -39,7 +39,7 @@
                 <div class="card">
                     <h3>Computer</h3>
                     <h3>Science</h3>
-                    <p>studi tentang proses interaksi dengan masalah yang direpresentasikan dalam bentuk program.</p>
+                    <p>studi tentang proses berinteraksi dengan data berupa masalah yang direpresentasikan dalam bentuk program.</p>
                 </div>
             </div>
 
@@ -73,5 +73,26 @@
             </a>
         </div>
     </div>
+<div class="content">
+</div>
+    <footer id="footers">
+        <div class="container">
+          <div class="footer-social">
+            <a href="#" class="social-icons"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="social-icons"><i class="fa fa-instagram"></i></a>
+            <a href="#" class="social-icons"><i class="fa fa-twitter"></i></a>
+        </div>
+            <ul class="footer-list">
+                <li><a href="aboutus.html">Tentang Kami</a></li>
+                <li><a href="#">Hubungi Kami</a></li>
+                <li><a href="#">Tanya Kami</a></li>
+                <li><a href="#">Ketentuan Layanan</a></li>
+            </ul>
+            <p class="footer-copyright">&copy 2016 Kata Pijar. All Rights Reserved</p>
+        </div>
+        
+    </footer>
+<!-- JAVASCRIPTS -->
+  <script src="js/navbar.js"></script>
 </body>
 </html>
