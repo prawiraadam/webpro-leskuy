@@ -14,7 +14,8 @@ class video extends CI_Controller {
 	public function videos($course_id)
 	{
 		$data_video = $this->M_video->Get_Video($course_id);
-		$this->load->view('page_header');
-		$this->load->view('video_page',['data'=>$data_video]);
+		$this->load->view('navbar');
+        $this->load->view('video/video_page',['data'=>$data_video]);
+        $this->load->view('footer');
 	}
 }
