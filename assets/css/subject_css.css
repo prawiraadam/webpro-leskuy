@@ -68,6 +68,9 @@ li {
 .container{
     background-color: inherit;
     height: 100%;
+}
+
+.white-background{
     background: #ffffff;
 }
 

@@ -21,7 +21,7 @@
             
             <?php foreach ($course as $c) { ?>
                 <div class="column">
-                    <a href="#" class="card">
+                    <a href="<?php echo site_url('video/videos/')?><?php echo $c->course_id ?>" class="card">
                         <img class="card-img-top" src="assets/img/<?php echo $c->course_foto ?>" alt="Card image cap">
                         <div class="card-body">
                             <p class="subtitle"><?php echo $c->univ_id ?></p>
