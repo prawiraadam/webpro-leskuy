@@ -1,3 +1,24 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
 /*HOMEPAGE*/
 #mainNav {
   background-color: #fed136;
@@ -12,7 +33,7 @@
   padding-bottom: 5px;
   border: 0;
   background-color: #fed136;  
-  font-family: 'Montserrat';
+  font-family: 'Roboto';
   color: black;
   position: absolute;
   right: 20px;
@@ -104,7 +125,7 @@
 }
 
 .hero-slider .carousel-cell .inner .subtitle {
-  font-family: "Montserrat", serif;
+  font-family: "Roboto Slab", serif;
   font-size: 2.2rem;
   line-height: 1.2em;
   letter-spacing: 3px;
@@ -366,7 +387,7 @@
   padding-bottom: 5px;
   border: 0;
   background-color: #fed136;  
-  font-family: 'Montserrat';
+  font-family: 'Roboto';
   color: black;
   position: absolute;
   right: 20px;
@@ -645,9 +666,16 @@ input { /*input text box*/
   text-decoration: none;
 }
 
+.form .loginbtn {
+
+}
+
 .loginbtn {
   margin-top: 40px;
   margin-bottom: 20px;
+  margin-left: 140px;
+  border-radius: 40px;
+  border: 1px solid white;
   width: 300px;
   background: #fed136;
   text-transform: uppercase;
@@ -661,6 +689,9 @@ input { /*input text box*/
 .signupbtn {
   margin-top: 20px;
   margin-bottom: 20px;
+  margin-left: 140px;
+  border-radius: 40px;
+  border: 1px solid white;
   width: 300px;
   background: #fed136;
   text-transform: uppercase;
@@ -730,7 +761,6 @@ input { /*input text box*/
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
 }
-
 /*about us page*/
 
 
@@ -748,7 +778,7 @@ input { /*input text box*/
   padding-bottom: 5px;
   border: 0;
   background-color: #fed136;  
-  font-family: 'Montserrat';
+  font-family: 'Roboto';
   color: black;
   position: absolute;
   right: 20px;
