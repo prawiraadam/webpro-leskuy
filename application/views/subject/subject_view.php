@@ -11,20 +11,24 @@
         
     <link rel="stylesheet" href="<?php echo base_url('assets/css/subject_css.css');?>">   
     <div class="container">
-        <h1 class="center padding-top-70">DAFTAR SUBJEK</h1>
+        <h1 class="center padding-top-35">DAFTAR SUBJEK</h1>
         <div class="row">
 
-            <div class="column">
-                <a href="#" class="card">
-                    <img class="card-img-top" src="<?php echo base_url('assets/img/kmptr.jpg')?>" alt="Card image cap">
-                    <div class="card-body">
-                        <p>Ilmu Komputer</p>
-                    </div>
-                </a>
-            </div>
+            <?php foreach ($subject as $s) {?>
 
-            </div>
+                <div class="column">
+                    <a href="#" class="card">
+                        <img class="card-img-top" src="assets/img/<?php echo $s->sub_foto ?>" alt="Card image cap">
+                        <div class="card-body">
+                            <p><?php echo $s->sub_nama ?></p>
+                        </div>
+                    </a>
+                </div>
+            
+            <?php } ?>
+
         </div>
+    </div>
         
     <!-- </body>
 </html> -->

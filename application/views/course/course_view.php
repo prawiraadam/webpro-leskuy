@@ -18,117 +18,20 @@
 
         <div class="container">
             <div class="row">
-
+            
+            <?php foreach ($course as $c) { ?>
                 <div class="column">
                     <a href="#" class="card">
-                        <img class="card-img-top" src="img/test.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="assets/img/<?php echo $c->course_foto ?>" alt="Card image cap">
                         <div class="card-body">
-                            <p class="subtitle">ITB</p>
-                            <p class="title">Machine Learning</p>
+                            <p class="subtitle"><?php echo $c->univ_id ?></p>
+                            <p class="title"><?php echo $c->course_name ?></p>
                             <p class="subtitle">full version</p>
-                            <p>Rp.50,000</p>
+                            <p>Rp.<?php echo $c->course_price?></p>
                         </div>
                     </a>
                 </div>
-                <div class="column">
-                    <a href="#" class="card">
-                        <img class="card-img-top" src="img/test.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="subtitle">ITB</p>
-                            <p class="title">Machine Learning</p>
-                            <p class="subtitle">full version</p>
-                            <p>Rp.50,000</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="column">
-                    <a href="#" class="card">
-                        <img class="card-img-top" src="img/test.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="subtitle">ITB</p>
-                            <p class="title">Machine Learning</p>
-                            <p class="subtitle">full version</p>
-                            <p>Rp.50,000</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="column">
-                    <a href="#" class="card">
-                        <img class="card-img-top" src="img/test.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="subtitle">ITB</p>
-                            <p class="title">Machine Learning</p>
-                            <p class="subtitle">full version</p>
-                            <p>Rp.50,000</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="column">
-                    <a href="#" class="card">
-                        <img class="card-img-top" src="img/test.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="subtitle">ITB</p>
-                            <p class="title">Machine Learning</p>
-                            <p class="subtitle">full version</p>
-                            <p>Rp.50,000</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="column">
-                    <a href="#" class="card">
-                        <img class="card-img-top" src="img/test.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="subtitle">ITB</p>
-                            <p class="title">Machine Learning</p>
-                            <p class="subtitle">full version</p>
-                            <p>Rp.50,000</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="column">
-                    <a href="#" class="card">
-                        <img class="card-img-top" src="img/test.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="subtitle">ITB</p>
-                            <p class="title">Machine Learning</p>
-                            <p class="subtitle">full version</p>
-                            <p>Rp.50,000</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="column">
-                    <a href="#" class="card">
-                        <img class="card-img-top" src="img/test.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="subtitle">ITB</p>
-                            <p class="title">Machine Learning</p>
-                            <p class="subtitle">full version</p>
-                            <p>Rp.50,000</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="column">
-                    <a href="#" class="card">
-                        <img class="card-img-top" src="img/test.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="subtitle">ITB</p>
-                            <p class="title">Machine Learning</p>
-                            <p class="subtitle">full version</p>
-                            <p>Rp.50,000</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="column">
-                    <a href="#" class="card">
-                        <img class="card-img-top" src="img/test.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="subtitle">ITB</p>
-                            <p class="title">Machine Learning</p>
-                            <p class="subtitle">full version</p>
-                            <p>Rp.50,000</p>
-                        </div>
-                    </a>
-                </div>
+            <?php } ?>
 
             </div>
         </div>
