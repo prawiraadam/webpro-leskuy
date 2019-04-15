@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Web extends CI_Controller {
+class subject extends CI_Controller {
 
 	public function __construct()
  	{
@@ -10,12 +10,12 @@ class Web extends CI_Controller {
  		$this->load->model('M_subject');
   	}
 
-	public function subject()
+	public function index()
 	{
         $data_subject = $this->M_subject->GetSubject();
-		$this->load->view('header_view');
-        $this->load->view('subject/subject_view',['data'=>$data_subject]);
-        $this->load->view('footer_view');
+		$this->load->view('login-navbar');
+        $this->load->view('subject/subject_view',['subject'=>$data_subject]);
+        $this->load->view('footer');
 	}
 
 	public function hapussubject($sub_id)
