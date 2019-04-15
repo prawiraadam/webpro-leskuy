@@ -10,11 +10,11 @@
     <body> -->
         
     <link rel="stylesheet" href="<?php echo base_url('assets/css/subject_css.css');?>">   
-    <div class="container">
+    <div class="container white-background">
         <h1 class="center padding-top-70">DAFTAR SUBJEK</h1>
         <div class="row">
 
-            <?php foreach ($subject as $s) {?>
+            <?php foreach ($subject as $s) { ?>
 
                 <div class="column">
                     <a href="#" class="card">
@@ -24,7 +24,7 @@
                         </div>
                     </a>
                 </div>
-            
+
             <?php } ?>
 
         </div>
