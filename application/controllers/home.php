@@ -33,4 +33,12 @@ class home extends CI_Controller {
         $this->load->view('subject/subject_view',['data'=>$data_subject]);
         $this->load->view('footer');
 	}
+
+	public function about()
+	{
+        $data_subject = $this->M_subject->GetSubject();
+		$this->load->view('login-navbar');
+        $this->load->view('aboutus',['data'=>$data_subject]);
+        $this->load->view('footer');
+	}
 }

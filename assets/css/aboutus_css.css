@@ -92,17 +92,17 @@
   border-radius: 30px;
 }
 
-.profiledata {
+.profiledata{
   margin-top: 10px;
 }
 
 .title {
   color: grey;
+
 }
 
 .emailtxt {
-  font-size: 14px;
-}
+  font-size: 14px;}
 
 .contactbtn {
   border: none;
@@ -113,7 +113,9 @@
   text-align: center;
   cursor: pointer;
   width: 100%;
-  border-radius: 30px
+  border-radius: 40px;
+  margin-bottom: 10px;
+  padding: 5px 0 5px;
 }
 
 .contactbtn:hover {
