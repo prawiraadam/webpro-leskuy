@@ -20,6 +20,8 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('video/video_page');
-	}
+		$this->load->view('login-navbar');
+		$this->load->view('login');
+		$this->load->view('footer');
+  }
 }
