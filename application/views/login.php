@@ -3,9 +3,8 @@
 <html>
 <head>
   <title>Leskuy! Login</title>
-<link rel="shortcut icon" href="img/logotitle.ico"/>
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab:300'><!-- library font yang dipakai -->
-  <link rel="stylesheet" href="assets/css/style.css">
+<link rel="shortcut icon" href="<?php echo base_url('img/logotitle.ico')?>"/>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab:300'><!-- library font yang dipakai -->  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!-- untuk icon navbar saat responsive layar kecil -->
 
 </head>
@@ -76,5 +75,5 @@
 <script>
 
 </script>
-<script src="assets/js/login.js"></script>
+<script src="<?php echo base_url('assets/js/login.js')?>"></script>
 </html>

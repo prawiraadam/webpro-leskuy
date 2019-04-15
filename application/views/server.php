@@ -7,7 +7,7 @@ $email    = "";
 $errors = array(); 
 
 // connect to the database
-$db = mysqli_connect('localhost', 'root', '', 'registration');
+$db = mysqli_connect('localhost', 'root', '', 'db_webpro_leskuy');
 
 // REGISTER USER
 if (isset($_POST['regbtn'])) {
@@ -48,10 +48,8 @@ if (isset($_POST['regbtn'])) {
   	$query = "INSERT INTO users (username, email, password) 
   			  VALUES('$username', '$email', '$pass1')";
   	mysqli_query($db, $query);
-  	// $_SESSION['username'] = $username;
   	$message = "Terima kasih telah mendaftar, silakan login!";
     echo "<script type='text/javascript'>alert('$message');</script>";
-  	// header('location: index.php');
   }
 }
 

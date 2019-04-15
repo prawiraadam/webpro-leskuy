@@ -1,3 +1,4 @@
+ <link rel="stylesheet" href="<?php echo base_url('assets/css/footer_css.css')?>">
 <div class="content">
 </div>
     <footer id="footers">
