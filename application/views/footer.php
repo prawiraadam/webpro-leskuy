@@ -11,7 +11,7 @@
             <ul class="footer-list">
                 <li><a href="<?php echo site_url('home/about');?>">Tentang Kami</a></li>
                 <li><a href="#">Ketentuan Layanan</a></li>
-                <li><a href="#">Hubungi Kami</a></li>  
+                <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=katapijar@gmail.com">Hubungi Kami</a></li>  
             </ul>
             <p class="footer-copyright">© 2016 Kata Pijar. All Rights Reserved</p>
         </div>
