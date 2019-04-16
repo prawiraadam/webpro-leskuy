@@ -77,7 +77,7 @@
             </div> -->
         </div>
         <div class="text-center subbtn">
-            <a class="btn btn-block btnblcktxt" href="#" role="button">
+            <a class="btn btn-block btnblcktxt" href="<?php echo site_url('home/subjek')?>" role="button">
             Lihat Semua Subjek
             </a>
         </div>
