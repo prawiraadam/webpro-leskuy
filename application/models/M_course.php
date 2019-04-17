@@ -5,7 +5,8 @@ class M_course extends CI_Model {
 	
 	public function Getcourse(){
 		$this->db->select('*');
-		$this->db->from('course');
+		$this->db->from('subject');
+		$this->db->join('course','course.sub_id=subject.sub_id');
 		$query = $this->db->get();
 		return $query->result();
 	}

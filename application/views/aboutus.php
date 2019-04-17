@@ -19,7 +19,7 @@
             <h5>Nuurshadieq</h5>
             <p class="title">CEO & Founder</p>
             <p>It's not a dead-end, it's a plot-twist</p><br><br>
-            <p class="emailtxt">example@example.com</p>
+            <p class="emailtxt">shadieqq@gmail.com</p>
             <a class="contactbtn" href="https://mail.google.com/mail/?view=cm&fs=1&to=shadieqq@gmail.com">Contact</a>
           </div>
         </div>
@@ -63,6 +63,4 @@
     </div>
   </section>
 </body>
-<div class="content">
-</div>
 </html>

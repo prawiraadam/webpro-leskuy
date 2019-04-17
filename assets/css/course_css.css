@@ -84,8 +84,11 @@ li {
 }
 
 .padding-top-70{
-    padding: 70px 0 0 0;
-    margin-top: 70px;
+    padding: 50px 0 0 0;
+}
+
+.padding-bot{
+    padding-bottom: 10px;
 }
 
 .center{

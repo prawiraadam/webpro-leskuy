@@ -14,7 +14,7 @@ class home extends CI_Controller {
 	{
         $data_subject = $this->M_subject->GetSubject();
 		$this->load->view('navbar');
-        $this->load->view('home',['data'=>$data_subject]);
+        $this->load->view('home',['subject'=>$data_subject]);
         $this->load->view('footer');
 	}
 
@@ -30,7 +30,7 @@ class home extends CI_Controller {
 	{
         $data_subject = $this->M_subject->GetSubject();
 		$this->load->view('login-navbar');
-        $this->load->view('subject/subject_view',['data'=>$data_subject]);
+        $this->load->view('subject/subject_view',['subject'=>$data_subject]);
         $this->load->view('footer');
 	}
 
