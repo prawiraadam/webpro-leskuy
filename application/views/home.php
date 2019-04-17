@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html>
 <body>
-    <div class="hero-slider" data-flickity='{ "wrapAround": true }'><!-- A hero slider is defined as a large, featured series of images prominently displayed on the homepage. -->
+    <div class="hero-slider" data-flickity='{ "wrapAround": true }'><!-- Menggunakan plugin css dari flickity -->
         <div class="carousel-cell" style="background-image:url(<?php echo base_url('assets/img/picture1.png')?>);">
             <div class="overlay">
             </div>
             <div class="inner">
                 <h3 class="subtitle">KATA PIJAR</h3>
-                <h2 class="title">Make Your Dreams Come True!</h2>
-                <a href="#" target="_blank" class="btn">Pelajari</a>
+                <h2 class="title">Buat Impianmu jadi Kenyataan!</h2>
+                <a href="<?php echo site_url('home/subjek')?>" target="_blank" class="btn">Pelajari</a>
             </div>
         </div>
         <div class="carousel-cell" style="background-image:url(<?php echo base_url('assets/img/picture2.png')?>);">
             <div class="overlay">
             </div>
             <div class="inner">
-                <h3 class="subtitle">Professional Teachers</h3>
-                <h2 class="title">Your Success is Our Priority</h2>
+                <h3 class="subtitle">Metode Berbasis Video</h3>
+                <h2 class="title">Kesuksesanmu adalah Prioritas Kami</h2>
                 <a href="#" target="_blank" class="btn">Pelajari</a>
             </div>
         </div>
@@ -24,9 +24,9 @@
             <div class="overlay">
             </div>
             <div class="inner">
-                <h3 class="subtitle">Join Us Now!</h3>
-                <h2 class="title">What are You Waiting For?</h2>
-                <a href="login.html" target="_blank" class="btn">Gabung</a>
+                <h3 class="subtitle">Tunggu apa lagi?</h3>
+                <h2 class="title">Gabung Sekarang!</h2>
+                <a href="<?php echo site_url('home/login')?>" target="_blank" class="btn">Gabung</a>
             </div>
         </div>
     </div>
@@ -77,7 +77,7 @@
             </div> -->
         </div>
         <div class="text-center subbtn">
-            <a class="btn btn-block btnblcktxt" href="#" role="button">
+            <a class="btn btn-block btnblcktxt" href="<?php echo site_url('home/subjek')?>" role="button">
             Lihat Semua Subjek
             </a>
         </div>

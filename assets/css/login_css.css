@@ -178,8 +178,7 @@ button:focus {
 }
 .logincont.s--signup .img_text.m--up {
   -webkit-transform: translateX(520px);
-          transform: translateX(520px);/*
-   margin-top: 10px;*/
+          transform: translateX(520px);
 }
 .img_text.m--in {
   -webkit-transform: translateX(-520px);
