@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 13, 2019 at 05:33 PM
+-- Generation Time: Apr 17, 2019 at 03:08 PM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.2.12
 
@@ -81,7 +81,10 @@ CREATE TABLE `subject` (
 --
 
 INSERT INTO `subject` (`sub_id`, `sub_nama`, `sub_desc`, `sub_foto`) VALUES
-('KMPTR', 'Ilmu Komputer', 'Secara umum diartikan sebagai ilmu yang mempelajari baik tentang komputasi, perangkat keras (hardware) maupun perangkat lunak (software).', 'kmptr.jpg');
+('BIO', 'Biologi', 'Biologi adalah kajian tentang kehidupan, dan organisme hidup, termasuk struktur, fungsi, pertumbuhan, evolusi, persebaran, dan taksonominya. ', 'bio.jpg'),
+('FSK', 'Fisika', 'Fisika adalah ilmu mengenai alam, yang mempelajari unsur-unsur dasar pembentuk alam semesta, gaya-gaya yang bekerja di dalamnya, dan akibat-akibatnya; mencakup rentang yang luas.', 'fsk.jpg'),
+('KMPTR', 'Ilmu Komputer', 'Secara umum diartikan sebagai ilmu yang mempelajari baik tentang komputasi, perangkat keras (hardware) maupun perangkat lunak (software).', 'kmptr.jpg'),
+('SNI', 'seni', 'Seni adalah keahlian membuat karya yang bermutu, seperti tari, lukisan, ukiran. Seni meliputi banyak kegiatan manusia dalam menciptakan karya visual, audio, atau pertunjukan.', 'sni.jpg');
 
 -- --------------------------------------------------------
 
@@ -110,18 +113,18 @@ INSERT INTO `university` (`univ_id`, `univ_name`, `univ_logo`) VALUES
 
 CREATE TABLE `user` (
   `user_id` int(11) NOT NULL,
-  `fullname` varchar(50) NOT NULL,
+  `username` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
-  `password` varchar(50) NOT NULL,
-  `foto_profile` varchar(50) NOT NULL
+  `password` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`user_id`, `fullname`, `email`, `password`, `foto_profile`) VALUES
-(1, 'Ahmad Satriamulya', 'ahmadrayi44@gmail.com', 'tumpenglontong', 'profile_ahmad.jpg');
+INSERT INTO `user` (`user_id`, `username`, `email`, `password`) VALUES
+(1, 'Ahmad Satriamulya', 'ahmadrayi44@gmail.com', 'tumpenglontong'),
+(2, 'romi', 'romi123@sasa.com', '37f5a1f50adc555f46d93c30bed0219a');
 
 -- --------------------------------------------------------
 
@@ -189,7 +192,7 @@ ALTER TABLE `video`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `video`
