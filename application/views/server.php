@@ -11,7 +11,6 @@ $db = mysqli_connect('localhost', 'root', '', 'db_webpro_leskuy');
 
 // REGISTER USER
 if (isset($_POST['regbtn'])) {
-  echo "<script type='text/javascript'>alert('ashiaap');</script>";
   // receive all input values from the form
   $username = mysqli_real_escape_string($db, $_POST['name']);
   $email = mysqli_real_escape_string($db, $_POST['email']);

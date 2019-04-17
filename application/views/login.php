@@ -11,7 +11,7 @@
 <body class="login">
 <div class="logincont">
       <div class="form sign-in">
-        <form method="post" action="<?php echo base_url()?>">
+        <form method="post" action="<?php echo site_url('home/login')?>">
         <h2 class="uppertext">Selamat Datang!</h2>
           <label>
               <span>Email</span>
@@ -48,7 +48,7 @@
       </div>
       <div class="form sign-up">
           <h2 class="uppertext">Isi data kamu!</h2>
-          <form method="post" action="<?php echo base_url()?>">
+          <form method="post" action="<?php echo site_url('home/login')?>">
           <label>
               <span>Nama</span>
               <input type="text" name="name" id="nama" required/>
