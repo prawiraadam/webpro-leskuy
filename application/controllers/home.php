@@ -20,7 +20,7 @@ class home extends CI_Controller {
 
 	public function login()
 	{
-        $data_subject = $this->M_subject->GetSubject();
+        // $data_subject = $this->M_subject->GetSubject();
 		$this->load->view('login-navbar');
         $this->load->view('login',['data'=>$data_subject]);
         $this->load->view('footer');
