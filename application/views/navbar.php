@@ -19,7 +19,7 @@
 </head>
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container" id="loginnavcont">
-      <a class="navbar-brand js-scroll-trigger" href="home.html"><img src="<?php echo base_url('assets/img/logo.png')?>" width="100px"></a>
+      <a class="navbar-brand js-scroll-trigger" href="<?php echo site_url('home')?>"><img src="<?php echo base_url('assets/img/logo.png')?>" width="100px"></a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars"></i>
       </button>

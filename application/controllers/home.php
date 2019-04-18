@@ -33,4 +33,11 @@ class home extends CI_Controller {
         $this->load->view('aboutus',['data'=>$data_subject]);
         $this->load->view('footer');
 	}
+
+	public function tnc()
+	{
+		// $this->load->view('login-navbar');
+        $this->load->view('tnc');
+        // $this->load->view('footer');
+	}
 }
