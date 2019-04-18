@@ -14,13 +14,9 @@
 
       <section id="profile">
     
-        <p class="profile"><span>E-mail Address <img src="<?php echo base_url('assets/img/edit.png')?>" alt="*Edit*"></span> lolno@gmail.com</p>
+        <p class="profile"><span>E-mail Address <img src="<?php echo base_url('assets/img/edit.png')?>" alt="*Edit*"></span><?php echo $data->email;?></p>
         
-        <p class="profile"><span>Password <img src="<?php echo base_url('assets/img/edit.png')?>" alt="*Edit*"></span> English(US)</p>
-        
-        <p class="profile"><span>Profile Name <img src="<?php echo base_url('assets/img/edit.png')?>" alt="*Edit*"></span> Public</p>
-      
-        <p class="profile"><span>Connected Accounts <img src="<?php echo base_url('assets/img/edit.png')?>" alt="*Edit*"></span> None</p>
+        <p class="profile"><span>Username<img src="<?php echo base_url('assets/img/edit.png')?>" alt="*Edit*"></span><?php echo $data->username?></p>
       </section>
       
       <section id="course" class="hidden">
@@ -29,9 +25,6 @@
         <p class="course">Machine Learning</p>
 
       </section>
-      
-      <section id="friends" class="hidden">
-        <p>Friends list:</p>
         
         <ul id="friendslist" class="clearfix">
           <li><a href="#"><img src="images/avatar.png" width="22" height="22"> Username</a></li>

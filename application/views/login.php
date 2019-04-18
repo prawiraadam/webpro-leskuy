@@ -11,7 +11,7 @@
 <body class="login">
 <div class="logincont">
       <div class="form sign-in">
-        <form method="post" action="<?php echo site_url('home/login')?>">
+        <form method="post" action="<?php echo site_url('login/login_action')?>">
         <h2 class="uppertext">Selamat Datang!</h2>
           <label>
               <span>Email</span>
@@ -19,7 +19,7 @@
           </label>
           <label class="labelpass">
             <span>Password</span>
-              <input class="password" type="password" name="login-pw" required/>
+              <input class="password" type="password" name="password" required/>
               <div class="hide-show">
                   <span class="btnpass">
                     <i class="btnpasstxt">Show Password</i>

@@ -7,14 +7,17 @@ class profile extends CI_Controller {
  	{
  		// Load M_Web as parents in here.
  		parent::__construct();
- 		// $this->load->model('M_course');
+		$this->load->model('M_profile');
+		if($this->session->userdata('status') != "signed"){
+			redirect('login');
+		}
   	}
 
-	public function index()
+	public function profile($u_name)
 	{
-        // $data_course = $this->M_course->Getcourse();
+        $data_user = $this->M_profile->Get_Profile($u_name);
 		$this->load->view('login-navbar');
-        $this->load->view('profile/profile_page');
+        $this->load->view('profile/profile_page',['data'=>$data_user]);
         $this->load->view('footer');
     }
 }
