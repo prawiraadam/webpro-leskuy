@@ -18,14 +18,15 @@
     					</tr>
   					</thead>
   					<tbody>
-  						<tr> <?php foreach ($subject as $sbj) {?>
+              <?php foreach ($subject as $sbj) {?>
+  						<tr>
   							<td><?php echo $sbj->sub_id ?></td> <!--Subject ID-->
                 <td><?php echo $sbj->sub_nama ?></td> <!--Name-->
                 <td><?php echo $sbj->sub_desc ?></td> <!--Description-->
                 <td><?php echo $sbj->sub_foto ?></td> <!--Foto-->
                 <td>
                   <button href="" type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#edit<?php echo $sbj->sub_id ?>">Edit</button>
-                  <button href="<?php echo base_url()?>index.php/M_Subject/hapus_subject/<?php echo $sbj->sub_id ?>" type="button" class="btn btn-dark btn-sm" onclick="deleteConfirm()">Delete</button>
+                  <a href="<?php echo base_url()?>index.php/Admin/deletesubject/<?php echo $sbj->sub_id ?>" type="button" class="btn btn-dark btn-sm" onclick="return confirm('Apakah Anda Yakin?')">Delete</a>
                 </td>
   						</tr>
               <?php } ?>
@@ -58,64 +59,66 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  <form>
+                  <form method="POST" action="<?php echo base_url()?>index.php/Admin/addsubject">
                     <div class="form-group">
-                      <input type="text" class="form-control" id="recipient-name" placeholder="Subject ID">
+                      <input type="text" class="form-control" id="recipient-name" name="sub_id" placeholder="Subject ID">
                     </div>
                     <div class="form-group">
-                      <input type="text" class="form-control" id="recipient-name" placeholder="Subject name">
+                      <input type="text" class="form-control" id="recipient-name" name="sub_nama" placeholder="Subject name">
                     </div>
                     <div class="form-group">
-                      <input type="text" class="form-control" id="recipient-name" placeholder="Description">
+                      <input type="text" class="form-control" id="recipient-name" name="sub_desc" placeholder="Description">
                     </div>
                     <div class="form-group">
-                      <input type="file" accept="image/*" class="form-control" id="recipient-name" placeholder="Foto">
+                      <input type="file" accept="image/*" class="form-control" id="recipient-name" name="sub_foto" placeholder="Foto">
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="submit" class="btn btn-primary">Create data</button>
                     </div>
                 </form>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Create data</button>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- Modal Edit -->
-          <div class="modal fade" id="edit<?php echo $sbj->sub_id ?>" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
+          <?php foreach ($subject as $sbj) {?>
+            <div class="modal fade" id="edit<?php echo $sbj->sub_id ?>" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
 
-              <!-- Modal Content -->
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h4 class="modal-title" id="ModalLabel">Edit data</h4>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <form>
-                    <div class="form-group">
-                      <input type="text" class="form-control" id="recipient-name" placeholder="Subject ID">
-                    </div>
-                    <div class="form-group">
-                      <input type="text" class="form-control" id="recipient-name" placeholder="Subject name">
-                    </div>
-                    <div class="form-group">
-                      <input type="text" class="form-control" id="recipient-name" placeholder="Description">
-                    </div>
-                    <div class="form-group">
-                      <input type="file" accept="image/*" class="form-control" id="recipient-name" placeholder="Foto">
-                    </div>
-                </form>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Edit data</button>
+                <!-- Modal Content -->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title" id="ModalLabel">Edit data</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form method="post" action="<?php echo base_url()?>index.php/Admin/editsubject/<?php echo $sbj->sub_id ?>">
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="recipient-name" name="sub_id" placeholder="Subject ID">
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="recipient-name" name="sub_nama" placeholder="Subject name">
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="recipient-name" name="sub_desc" placeholder="Description">
+                      </div>
+                      <div class="form-group">
+                        <input type="file" accept="image/*" class="form-control" id="recipient-name" name="sub_foto" placeholder="Foto">
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Edit data</button>
+                      </div>
+                  </form>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          <?php } ?>
         </div>
       </div>
 		</div>

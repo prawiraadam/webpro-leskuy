@@ -12,4 +12,18 @@ class M_video extends CI_Model {
 		$query = $this->db->get();
 		return $query->result();
     }
+
+    public function hapus_video($video_id){
+		$this->db->where('vid_id', $video_id);
+		$this->db->delete('video');
+	}
+
+	public function edit_video($video_id, $data){
+		$this->db->where('vid_id', $video_id);
+		return $this->db->update('video', $data);
+	}
+
+	public function tambah_video($data){
+		return $this->db->insert('video', $data);
+	}
 }

@@ -10,12 +10,6 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
 
-<script>
-  function deleteConfirm(){
-    confirm("Are you sure ?");
-  }
-</script>
-
 <style type="text/css">
   .container-fluid{
     background-color: #D0D3D4;
@@ -49,8 +43,8 @@
         <img class="logo" src="../../assets/img/Logo.png">
       <!-- Sidebar -->
   		<ul class="nav flex-column">
-        <li class="nav-item"><a class="nav-link active" href="<?php echo base_url('index.php/Admin/user') ?>"><i class='far'>&#xf007;</i>User List</a></li>
-        <li class="nav-item"><a class="nav-link" href="<?php echo base_url('index.php/Admin/university') ?>"><i class='fas'>&#xf19c;</i>University List</a></li>
+        <li class="nav-item"><a class="nav-link active" href="<?php echo base_url('index.php/Admin/index') ?>"><i class='far'>&#xf007;</i>User List</a></li>
+        <li class="nav-item"><a class="nav-link" href="<?php echo base_url('index.php/Admin/univ') ?>"><i class='fas'>&#xf19c;</i>University List</a></li>
         <li class="nav-item"><a class="nav-link" href="<?php echo base_url('index.php/Admin/subject')?>"><i class='fas'>&#xf5da;</i>Subject List</a></li>
         <li class="nav-item"><a class="nav-link" href="<?php echo base_url('index.php/Admin/course')?>"><i class='fas'>&#xf02d;</i>Course List</a></li>
         <li class="nav-item"><a class="nav-link" href="<?php echo base_url('index.php/Admin/video')?>"><i class='far'>&#xf1c8;</i>Video List</a></li>
