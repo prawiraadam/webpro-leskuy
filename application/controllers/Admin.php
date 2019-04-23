@@ -46,10 +46,9 @@ class Admin extends CI_Controller {
   	public function addUser(){
   		$data = [
   			"user_id" => $this->input->post('user_id'),
-  			"fullname" => $this->input->post('fullname'),
+  			"username" => $this->input->post('username'),
   			"email" => $this->input->post('email'),
   			"password" => $this->input->post('password'),
-  			"foto_profile" => $this->input->post('foto_profile'),
   		];
   		$this->M_User->tambah_user($data);
   		redirect('/Admin/index', 'refresh');
@@ -134,10 +133,9 @@ class Admin extends CI_Controller {
   	//Edit list
 	public function editUser($user_id){
   		$data = [
-  			"fullname" => $this->input->post('fullname'),
+  			"username" => $this->input->post('username'),
   			"email" => $this->input->post('email'),
   			"password" => $this->input->post('password'),
-  			"foto_profile" => $this->input->post('foto_profile'),
   		];
   		$this->M_User->edit_user($user_id, $data);
   		redirect('/Admin/index', 'refresh');

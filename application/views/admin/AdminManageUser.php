@@ -12,10 +12,8 @@
 					<thead class="thead">
 						<tr>
   						<th scope="col">User ID</th>
-  						<th scope="col">Fullname</th>
+  						<th scope="col">Username</th>
   						<th scope="col">Email</th>
-              <th scope="col">Password</th>
-              <th scope="col">Profile Picture</th>
               <th scope="col">Actions</th>
   					</tr>
 					</thead>
@@ -23,10 +21,8 @@
 						<?php foreach ($user as $u) {?>
             <tr>
 							<td><?php echo $u->user_id ?></td> <!--User ID--> 
-              <td><?php echo $u->fullname ?></td> <!--Fullname-->
+              <td><?php echo $u->username ?></td> <!--Fullname-->
               <td><?php echo $u->email ?></td> <!--Email-->
-              <td><?php echo $u->password ?></td> <!--Password-->
-              <td><?php echo $u->foto_profile ?></td> <!--Profile Picture-->
               <td>
                 <button href="" type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#edit<?php echo $u->user_id ?>">Edit</button>
                 <a type="button" href="<?php echo base_url()?>index.php/Admin/deleteUser/<?php echo $u->user_id ?>" type="button" class="btn btn-dark btn-sm" onClick="return confirm('Apakah Anda Yakin?')">Delete</a>
@@ -64,16 +60,13 @@
                 <div class="modal-body">
                   <form method="POST" action="<?php echo base_url()?>index.php/Admin/adduser">
                     <div class="form-group">
-                      <input type="text" class="form-control" id="recipient-name" name="fullname" placeholder="Fullname" required>
+                      <input type="text" class="form-control" id="recipient-name" name="username" placeholder="Fullname" required>
                     </div>
                     <div class="form-group">
                       <input type="text" class="form-control" id="recipient-name" name="email" placeholder="Email" required>
                     </div>
                     <div class="form-group">
                       <input type="password" class="form-control" id="recipient-name" name="password" placeholder="Password" required>
-                    </div>
-                    <div class="form-group">
-                      <input type="file" accept="image/*" class="form-control" id="recipient-name" name="foto_profile" placeholder="Profile Picture">
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -109,9 +102,6 @@
                       </div>
                       <div class="form-group">
                         <input type="password" class="form-control" id="recipient-name" name="password" placeholder="Password">
-                      </div>
-                      <div class="form-group">
-                        <input type="file" accept="image/*" class="form-control" id="recipient-name" name="foto_profile">
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
