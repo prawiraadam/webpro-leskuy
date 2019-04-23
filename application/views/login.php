@@ -48,7 +48,7 @@
       </div>
       <div class="form sign-up">
           <h2 class="uppertext">Isi data kamu!</h2>
-          <form method="post" action="<?php echo site_url('home/login')?>">
+          <form method="post" action="<?php echo site_url('login/registration_action')?>">
           <label>
               <span>Nama</span>
               <input type="text" name="name" id="nama" required/>
@@ -59,11 +59,11 @@
             </label>
             <label>
               <span>Password</span>
-              <input type="password" name="login-pw" required/>
+              <input type="password" name="password" required/>
             </label>
             <label>
               <span>Konfirmasi Password</span>
-              <input type="password" name="login-pw2" required/>
+              <input type="password" name="conf_password" required/>
             </label>
           <input type="submit" name="regbtn" value="Daftar" class="submit signupbtn" style="color: white"></input>
           <button type="button" class="fb-btn">Join with <span>facebook</span></button>

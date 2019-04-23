@@ -14,23 +14,21 @@
 
       <section id="profile">
     
-        <p class="profile"><span>E-mail Address <img src="<?php echo base_url('assets/img/edit.png')?>" alt="*Edit*"></span><?php echo $data->email;?></p>
+        <p class="profile"><span>E-mail Address <img src="<?php echo base_url('assets/img/edit.png')?>" alt="*Edit*"></span><?php echo $data['user']->email;?></p>
         
-        <p class="profile"><span>Username<img src="<?php echo base_url('assets/img/edit.png')?>" alt="*Edit*"></span><?php echo $data->username?></p>
+        <p class="profile"><span>Username<img src="<?php echo base_url('assets/img/edit.png')?>" alt="*Edit*"></span><?php echo $data['user']->username?></p>
       </section>
       
       <section id="course" class="hidden">
         <p>Most recent Course:</p>
-        
-        <p class="course">Machine Learning</p>
+        <?php if($data['course'])  {?>
+          <?php foreach ($data['course'] as $course) {?>  
+              <p class="course"><?php echo $course->course_name ?></p>
+          <?php }?>
+        <?php }else{?>
+          <p class="course">Belum ada course</p>
+        <?php }?>
 
-      </section>
-        
-        <ul id="friendslist" class="clearfix">
-          <li><a href="#"><img src="images/avatar.png" width="22" height="22"> Username</a></li>
-          <li><a href="#"><img src="images/avatar.png" width="22" height="22"> SomeGuy123</a></li>
-          <li><a href="#"><img src="images/avatar.png" width="22" height="22"> PurpleGiraffe</a></li>
-        </ul>
       </section>
       
       

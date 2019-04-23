@@ -39,9 +39,8 @@
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php echo $this->session->userdata('u_name')?></a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="<?php echo site_url('profile/profile/') ?><?php echo $this->session->userdata('u_name')?>">My Profile</a>
-                <a class="dropdown-item" href="<?php echo site_url('login/logout') ?>">logout</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" href="<?php echo site_url('login/logout') ?>">logout</a>
               </div>
           </li>
           <?php }else{ ?>

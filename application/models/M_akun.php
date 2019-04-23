@@ -13,10 +13,25 @@ class M_akun extends CI_Model {
         return $rows>0;
     }
 
+    public function cek_regis($data){
+        $query = $this->db->get_where('user',array('email' => $data['email']));
+        $res = $query->row();
+        return $res;
+    }
+
     public function get_username($data){
         $query = $this->db->get_where('user',array('email' => $data['email'],'password' => $data['password']));
         $res = $query->row();
         return $res->username;
+    }
+
+    public function insert_user($data){
+        $new_user = array(
+            'username' => $data['u_name'],
+            'email' => $data['email'],
+            'password' => $data['password ']
+        );
+        $this->db->insert('user', $new_user);
     }
 
 }

@@ -7,6 +7,7 @@ public function __construct()
  {
      // Load M_Web as parents in here.
      parent::__construct();
+      
      $this->load->model('M_akun');
   }
 
@@ -59,8 +60,49 @@ public function login_action()
 
     
 }
-    public function logout(){
-        $this->session->sess_destroy();
-        redirect(site_url('login/index'));
+
+public function registration_action()
+{
+    $errors = array();
+    $data = array(
+        'u_name' => $_POST['name'],
+        'email' => $_POST['email'], 
+        'password' => md5($_POST['password']),
+        'conf_password' => md5($_POST['conf_password'])
+    );
+
+if (empty($data['u_name'])) { array_push($errors, "Name is required"); }
+  if (empty($data['email'])) { array_push($errors, "Email is required"); }
+  if (empty($data['password'])) { array_push($errors, "Password is required"); }
+  if ($data['password'] != $data['conf_password']) {
+	array_push($errors, "");
+  $message = "Kedua password tidak sama";
+       echo "<script type='text/javascript'>alert('$message');</script>";
+  }
+
+  // first check the database to make sure 
+  // a user does not already exist with the same username and/or email
+  $user = $this->M_akun->cek_regis($data);
+  
+  if ($user) { // if user exists
+    if ($user['email'] === $email) {
+       array_push($errors, "");
+       $message = "Email telah tersedia";
+       echo "<script type='text/javascript'>alert('$message');</script>";
     }
+  }
+
+  // Finally, register user if there are no errors in the form
+  if (count($errors) == 0) {
+  	// $pass1 = md5($pass1);//encrypt the password before saving in the database
+  	$this->M_akun->insert_user($data);
+  	$message = "Terima kasih telah mendaftar, silakan login!";
+    echo "<script type='text/javascript'>alert('$message');</script>";
+  }
+}
+
+public function logout(){
+    $this->session->sess_destroy();
+    redirect(site_url('home'));
+}
 }

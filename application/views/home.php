@@ -20,15 +20,17 @@
                 <a href="#" class="btn">Pelajari</a>
             </div>
         </div>
+        <?php if(!$this->session->userdata('status')) {?>
         <div class="carousel-cell" style="background-image:url(<?php echo base_url('assets/img/picture3.png')?>);">
             <div class="overlay">
             </div>
             <div class="inner">
                 <h3 class="subtitle">Tunggu apa lagi?</h3>
                 <h2 class="title">Gabung Sekarang!</h2>
-                <a href="<?php echo site_url('home/login')?>" class="btn">Gabung</a>
+                <a href="<?php echo site_url('login/index')?>" class="btn">Gabung</a>
             </div>
         </div>
+        <?php }?>
     </div>
     <div class="container" id="cardcont">
         <div class="captsub">
