@@ -5,6 +5,17 @@
     font-family: 'Montserrat';
 }
 
+footer{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+}
+html{
+    min-height: 100%;
+    position: relative;
+}
+
 #footers .container{
     text-align: center;
     border-bottom: 1px solid white;
