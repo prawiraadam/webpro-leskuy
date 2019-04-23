@@ -4,12 +4,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class login extends CI_Controller {
 
 public function __construct()
- {
+{
      // Load M_Web as parents in here.
      parent::__construct();
       
      $this->load->model('M_akun');
-  }
+}
 
 public function index()
 {
@@ -45,12 +45,12 @@ public function login_action()
                 'status' => "signed"
             );
             $this->session->set_userdata($data_session);
-            $message = "Kamu telah berhasil login!";
-            echo "<script type='text/javascript'>alert('$message');</script>";
+            // $message = "Kamu telah berhasil login!";
+            // echo "<script type='text/javascript'>alert('$message');</script>";
             redirect('home');
         }else{
-            $message = "Email atau Password salah";
-            echo "<script type='text/javascript'>alert('$message');</script>";
+            // $message = "Email atau Password salah";
+            // echo "<script type='text/javascript'>alert('$message');</script>";
             redirect(site_url("login/index"));
         }
     }else{
@@ -70,10 +70,6 @@ public function registration_action()
         'password' => md5($_POST['password']),
         'conf_password' => md5($_POST['conf_password'])
     );
-
-if (empty($data['u_name'])) { array_push($errors, "Name is required"); }
-  if (empty($data['email'])) { array_push($errors, "Email is required"); }
-  if (empty($data['password'])) { array_push($errors, "Password is required"); }
   if ($data['password'] != $data['conf_password']) {
 	array_push($errors, "");
   $message = "Kedua password tidak sama";
@@ -96,8 +92,9 @@ if (empty($data['u_name'])) { array_push($errors, "Name is required"); }
   if (count($errors) == 0) {
   	// $pass1 = md5($pass1);//encrypt the password before saving in the database
   	$this->M_akun->insert_user($data);
-  	$message = "Terima kasih telah mendaftar, silakan login!";
-    echo "<script type='text/javascript'>alert('$message');</script>";
+  	// $message = "Terima kasih telah mendaftar, silakan login!";
+    // echo "<script type='text/javascript'>alert('$message');</script>";
+    redirect('home');
   }
 }
 

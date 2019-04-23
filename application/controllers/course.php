@@ -12,7 +12,7 @@ class course extends CI_Controller {
 
 	public function index($subject_id)
 	{
-        $data_course = $this->M_course->Get_Video($subject_id);
+        $data_course = $this->M_course->Getcourse($subject_id);
 		$this->load->view('login-navbar');
         $this->load->view('course/course_view',['course'=>$data_course]);
         $this->load->view('footer');
@@ -20,7 +20,7 @@ class course extends CI_Controller {
 
 	public function course($subject_id)
 	{
-		$data_course = $this->M_course->Get_Video($subject_id);
+		$data_course = $this->M_course->Getcourse($subject_id);
 		$this->load->view('login-navbar');
         $this->load->view('course/course_view',['course'=>$data_course]);
         $this->load->view('footer');

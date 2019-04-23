@@ -12,15 +12,19 @@
         <div class="title padding-top-70">
             <div class="container">
 
-                <h1 class="padding-top-70"><?php echo $course[0]->sub_nama ?></h1>
-                <p class="padding-bot"><?php echo $course[0]->sub_desc?></p>
-                
+                <?php if($course) {?>
+
+                    <h1 class="padding-top-70"><?php echo $course[0]->sub_nama ?></h1>
+                    <p class="padding-bot"><?php echo $course[0]->sub_desc?></p>
+                <?php }else{?>
+                    <h1 class="padding-top-70">Masih Kosong boy</h1>
+                <?php }?>
             </div>
         </div>
 
         <div class="container">
             <div class="row">
-            
+        
             <?php foreach ($course as $c) { ?>
                 <div class="column">
                     <a href="<?php echo site_url('video/videos/')?><?php echo $c->course_id ?>" class="card">

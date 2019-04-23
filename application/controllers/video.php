@@ -18,4 +18,12 @@ class video extends CI_Controller {
         $this->load->view('video/video_page',['data'=>$data_video]);
         $this->load->view('footer');
 	}
+
+	// public function video_clicked($vid_id)
+	// {
+	// 	$data_video = $this->M_video->Get_Video($vid_id);
+	// 	$this->load->view('navbar');
+    //     $this->load->view('video/video_page',['data'=>$data_video]);
+    //     $this->load->view('footer');
+	// }
 }

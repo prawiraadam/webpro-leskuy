@@ -11,6 +11,14 @@ class M_video extends CI_Model {
 		$this->db->where('course_id',$course_id);
 		$query = $this->db->get();
 		return $query->result();
+	}
+	
+	public function video_clicked($vid_id,$course_id){
+		$this->db->select('*');
+		$this->db->from('video');
+		$this->db->where(array('course_id'=>$course_id,'vid_id'=>$vid_id));
+		$query = $this->db->get();
+		return $query->result();
     }
 
     public function hapus_video($video_id){

@@ -7,7 +7,7 @@ class M_course extends CI_Model {
 		$this->db->select('*');
 		$this->db->from('subject');
 		$this->db->join('course','course.sub_id=subject.sub_id');
-		$this->db->where('subject_id',$subject_id);
+		$this->db->where('course.sub_id',$subject_id);
 		$query = $this->db->get();
 		return $query->result();
 	}

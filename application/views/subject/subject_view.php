@@ -15,20 +15,16 @@
     <div class="container white-background">
         <h1 class="center padding-top-70">DAFTAR SUBJEK</h1>
         <div class="row">
-
             <?php foreach ($subject as $s) { ?>
-
                 <div class="column">
-                    <a href="#" class="card">
+                    <a href="<?php echo site_url('course/course/')?><?php echo $s->sub_id ?>" class="card">
                         <img class="card-img-top" src="<?php echo base_url('assets/img/') ?><?php echo $s->sub_foto ?>" alt="Card image cap">
                         <div class="card-body">
                             <p><?php echo $s->sub_nama ?></p>
                         </div>
                     </a>
                 </div>
-
             <?php } ?>
-
         </div>
     </div>
         
