@@ -20,16 +20,15 @@ class M_course extends CI_Model {
 		return $query->result();
 	}
 
-	public function hapus_course($sub_id)
+	public function hapus_course($course_id)
 	{
-		$this->db->where('sub_id',$sub_id);
+		$this->db->where('course_id',$course_id);
 		$this->db->delete('course');
 	}
 
-
-	public function edit_course($sub_id,$data)
+	public function edit_course($course_id,$data)
 	{
-		$this->db->where('sub_id',$sub_id);
+		$this->db->where('course_id',$course_id);
 		return $this->db->update('course',$data);
 	}
 

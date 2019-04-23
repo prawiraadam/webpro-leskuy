@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class M_subject extends CI_Model {
 	
-	public function GetSubject(){
+	public function getSubject(){
 		$this->db->select('*');
 		$this->db->from('subject');
 		$query = $this->db->get();

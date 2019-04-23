@@ -24,7 +24,7 @@
             <a class="nav-link js-scroll-trigger" href="<?php echo site_url('home')?>">Beranda</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#2">Kursus</a>
+            <a class="nav-link js-scroll-trigger" href="<?php echo site_url('course')?>">Kursus</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="<?php echo site_url('home/subjek')?>">Subjek</a>
