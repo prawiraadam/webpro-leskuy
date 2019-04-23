@@ -32,7 +32,7 @@ class Admin extends CI_Controller {
 
   	public function course(){
 		$this->load->view('Admin/AdminSideBar_view');
-		$course = $this->M_course->getCourse();
+		$course = $this->M_course->getCourseAdmin();
 		$this->load->view('Admin/AdminManageCourse', ['course' => $course]);
   	}
 

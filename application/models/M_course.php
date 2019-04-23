@@ -12,6 +12,13 @@ class M_course extends CI_Model {
 		return $query->result();
 	}
 
+	public function getCourseAdmin(){
+		$this->db->select('*');
+		$this->db->from('course');
+		$query = $this->db->get();
+		return $query->result();
+	}
+
 	public function Get_CourseOwns($user_id){
 		$this->db->select('*');
 		$this->db->from('course_owns');
