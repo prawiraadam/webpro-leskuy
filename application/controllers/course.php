@@ -10,9 +10,17 @@ class course extends CI_Controller {
  		$this->load->model('M_course');
   	}
 
-	public function index()
+	public function index($subject_id)
 	{
-        $data_course = $this->M_course->Getcourse();
+        $data_course = $this->M_course->Get_Video($subject_id);
+		$this->load->view('login-navbar');
+        $this->load->view('course/course_view',['course'=>$data_course]);
+        $this->load->view('footer');
+	}
+
+	public function course($subject_id)
+	{
+		$data_course = $this->M_course->Get_Video($subject_id);
 		$this->load->view('login-navbar');
         $this->load->view('course/course_view',['course'=>$data_course]);
         $this->load->view('footer');

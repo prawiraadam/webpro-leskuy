@@ -3,10 +3,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class M_course extends CI_Model {
 	
-	public function Getcourse(){
+	public function Getcourse($subject_id){
 		$this->db->select('*');
 		$this->db->from('subject');
 		$this->db->join('course','course.sub_id=subject.sub_id');
+		$this->db->where('subject_id',$subject_id);
 		$query = $this->db->get();
 		return $query->result();
 	}
