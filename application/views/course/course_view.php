@@ -34,7 +34,7 @@
                             <p class="title"><?php echo $c->course_name ?></p>
                             <p class="subtitle">full version </p>
                             <p>Rp.<?php echo $c->course_price?></p>
-                            <?php if($data['course_id']) {?>
+                            <?php if($data['course_id']!="Kosong") {?>
                                 <?php if(in_array($c->course_id,$data['course_id'])) {?>
                                     <a href="<?php echo site_url('video/videos/')?><?php echo $c->course_id ?>" class="btn btn-warning btn-lg">Sudah terbeli</a>
                                 <?php }else{?>  

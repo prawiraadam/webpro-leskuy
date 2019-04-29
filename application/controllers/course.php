@@ -37,8 +37,8 @@ class course extends CI_Controller {
 			// $course_id =  $this->M_course->Get_CourseOwnsId($data_user->user_id);
 			$data = array(
 				// 'user' => $data_user,
-				'course' => $data_course
-				// 'course_id' =>$course_id
+				'course' => $data_course,
+				'course_id' =>"Kosong"
 			);
 		};
 		$this->load->view('login-navbar');

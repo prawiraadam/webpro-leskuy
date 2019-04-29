@@ -15,8 +15,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="sidenav">
     <?php $i=1?>
       <?php foreach ($data as $vid) {?>
-          <a href="#tabs<?php echo $i;?>" class="list-group-item list-group-item-action bg-light"><?php echo $vid->vid_nama?></a></li>
-      <?php } ?>
+          <a href="#tabs<?php echo $i;?>"  class="list-group-item list-group-item-action bg-light"><?php echo $vid->vid_nama?></a></li>
+      <?php $i++;} ?>
       </div>
 
     <!-- Page Content -->
@@ -25,15 +25,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           <span class="navbar-toggler-icon"></span>
         </button>
       </nav>
-      <div class="video-content">
+      <div id="video-content">
     <?php $i=1?>
       <?php foreach ($data as $vid) {?>
-        <div id="tabs<?php echo $i?>">
+        <section id="tabs<?php echo $i?>" <?php if ($i>1) {echo "class='hidden'";}?>>
             <iframe class="video" width="720" height="360" src="<?php echo $vid->vid_content;?> " frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <p class="videsc"> <?php echo $vid->vid_desc?></p>
-      <?php } ?>
-
-        </div>
+      </section>
+      <?php $i++;} ?>
       </div>    
     </div>
     <!-- /#page-content-wrapper -->
@@ -46,14 +45,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <script type="text/javascript">
 $(function(){
-  $('#sidenav a').on('click', function(e){
+  $('.sidenav a').on('click', function(e){
     e.preventDefault();
     var newcontent = $(this).attr('href');
     
-    $('#sidenav a').removeClass('sel');
+    $('.sidenav a').removeClass('sel');
     $(this).addClass('sel');
     
-    $('#main video-content').each(function(){
+    $('#video-content section').each(function(){
       if(!$(this).hasClass('hidden')) { $(this).addClass('hidden'); }
     });
     
