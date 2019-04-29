@@ -17,7 +17,7 @@
                     <h1 class="padding-top-70"><?php echo $data['course'][0]->sub_nama ?></h1>
                     <p class="padding-bot"><?php echo $data['course'][0]->sub_desc?></p>
                 <?php }else{?>
-                    <h1 class="padding-top-70">Masih Kosong boy</h1>
+                    <h1 class="padding-top-70">Still empty</h1>
                 <?php }?>
             </div>
         </div>
@@ -43,13 +43,13 @@
                             <?php }else{?>
                             <a type="button" href="<?php echo base_url()?>index.php/course/belicourse/<?php echo $c->course_id ?>" class="btn btn-warning btn-lg" onclick="return confirm('Apakah Anda Yakin?')">Beli</a>
                             <?php }?>
-
+                            <!-- </div> -->
                         </div>
-                    </a>
                 </div>
+            </div>
+
             <?php } ?>
 
-            </div>
         </div>
         
     <!-- </body>

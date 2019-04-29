@@ -8,7 +8,6 @@
         <ul class="clearfix">
           <li><a href="#profile" class="sel">Profile</a></li>
           <li><a href="#course">Courses</a></li>
-          <li><a href="#friends">Friends</a></li>
         </ul>
       </nav>
 

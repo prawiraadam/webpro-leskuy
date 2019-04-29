@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="<?php echo base_url('assets/source/bootstrap/css/bootstrap.min.css')?>">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- parallax -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> <!-- sidebar responsive -->
-
+  <title> Kata PIJAR </title>
 </head>
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container" id="loginnavcont">

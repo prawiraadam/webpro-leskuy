@@ -51,11 +51,14 @@ class course extends CI_Controller {
 		if($this->session->userdata('status')){
 			$u_name = $this->session->userdata('u_name');
 			$data_user = $this->M_profile->Get_Profile($u_name);
+			$data_course = $this->M_profile->Get_Profile($u_name);
 			$data = array(
 				'user_id' => $data_user->user_id,
 				'course_id' => $course_id
 			);
 			$this->M_course->insert_CourseOwns($data);
+			redirect(site_url("course/course/"));
+
 		}else{
 			redirect(site_url("login/index"),'belum login');
 		// redire
