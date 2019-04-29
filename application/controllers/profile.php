@@ -19,9 +19,11 @@ class profile extends CI_Controller {
 	{
 		$data_user = $this->M_profile->Get_Profile($u_name);
 		$data_course =  $this->M_course->Get_CourseOwns($data_user->user_id);
+		$course_id =  $this->M_course->Get_CourseOwnsId($data_user->user_id);
 		$data = array(
 			'user' => $data_user,
-			'course' => $data_course
+			'course' => $data_course,
+			'course_id' =>$course_id
 		);
 		$this->load->view('login-navbar');
         $this->load->view('profile/profile_page',['data'=>$data]);

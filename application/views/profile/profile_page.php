@@ -14,9 +14,10 @@
 
       <section id="profile">
     
-        <p class="profile"><span>E-mail Address <img src="<?php echo base_url('assets/img/edit.png')?>" alt="*Edit*"></span><?php echo $data['user']->email;?></p>
+        <p class="profile"><span>E-mail Address: </span><?php echo $data['user']->email;?></p>
         
-        <p class="profile"><span>Username<img src="<?php echo base_url('assets/img/edit.png')?>" alt="*Edit*"></span><?php echo $data['user']->username?></p>
+        <p class="profile"><span>Username: </span><?php echo $data['user']->username?></p>
+        <button href="" type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#edit">Edit</button>
       </section>
       
       <section id="course" class="hidden">
@@ -34,6 +35,37 @@
       
     </div><!-- @end #content -->
   </div><!-- @end #w -->
+  <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+
+      <!-- Modal Content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="ModalLabel">Edit data</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form method="post" action="<?php echo base_url()?>index.php/Admin/edituser/<?php echo $data['user']->user_id ?>">
+            <div class="form-group">
+              <input type="text" class="form-control" id="recipient-name" name="username" placeholder="Username">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="recipient-name" name="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="recipient-name" name="password" placeholder="Password">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary">Edit data</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 <script type="text/javascript">
 $(function(){
   $('#profiletabs ul li a').on('click', function(e){

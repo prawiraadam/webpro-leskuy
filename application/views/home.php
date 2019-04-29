@@ -40,8 +40,8 @@
         <?php for ($i = 0; $i <4 ; $i++){ ?>
             <div class="column">
                 <div class="card h-100">
-                    <h3><?php echo $subject[0]->sub_nama ?></h3>
-                    <p><?php echo $subject[0]->sub_desc ?></p>
+                    <h3><?php echo $subject[$i]->sub_nama ?></h3>
+                    <p><?php echo $subject[$i]->sub_desc ?></p>
                 </div>
             </div>
         <?php } ?>

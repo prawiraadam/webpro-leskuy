@@ -13,6 +13,13 @@ class M_video extends CI_Model {
 		return $query->result();
 	}
 	
+	public function getVideoAdmin(){
+		$this->db->select('*');
+		$this->db->from('video');
+		$query = $this->db->get();
+		return $query->result();
+	}
+
 	public function video_clicked($vid_id,$course_id){
 		$this->db->select('*');
 		$this->db->from('video');

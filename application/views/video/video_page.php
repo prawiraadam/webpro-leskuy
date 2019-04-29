@@ -30,7 +30,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <?php foreach ($data as $vid) {?>
         <div id="tabs<?php echo $i?>">
             <iframe class="video" width="720" height="360" src="<?php echo $vid->vid_content;?> " frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <p class="videsc">  &nbsp &nbsp Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p class="videsc"> <?php echo $vid->vid_desc?></p>
       <?php } ?>
 
         </div>
@@ -43,5 +43,23 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
         
         </div>
+
+<script type="text/javascript">
+$(function(){
+  $('#sidenav a').on('click', function(e){
+    e.preventDefault();
+    var newcontent = $(this).attr('href');
+    
+    $('#sidenav a').removeClass('sel');
+    $(this).addClass('sel');
+    
+    $('#main video-content').each(function(){
+      if(!$(this).hasClass('hidden')) { $(this).addClass('hidden'); }
+    });
+    
+    $(newcontent).removeClass('hidden');
+  });
+});
+</script>
 </html>
 

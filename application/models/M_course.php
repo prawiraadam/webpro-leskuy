@@ -19,6 +19,24 @@ class M_course extends CI_Model {
 		return $query->result();
 	}
 
+	// public function get_CourseById($course_id){
+	// 	$this->db->select('*');
+	// 	$this->db->from('course');
+	// 	// $this->db->join('course','course_owns.course_id=course.course_id');
+	// 	$this->db->where_in('course_id',$course_id);
+	// 	$query = $this->db->get();
+	// 	return $query->result();
+	// }
+
+	public function Get_CourseOwnsId($user_id){
+		$this->db->select('course_id');
+		$this->db->from('course_owns');
+		// $this->db->join('course','course_owns.course_id=course.course_id');
+		$this->db->where('user_id',$user_id);
+		$query = $this->db->get();
+		return $query->result();
+	}
+
 	public function Get_CourseOwns($user_id){
 		$this->db->select('*');
 		$this->db->from('course_owns');
@@ -28,6 +46,11 @@ class M_course extends CI_Model {
 		return $query->result();
 	}
 
+	public function insert_CourseOwns($data){
+        $this->db->insert('course_owns',$data);
+		// return $query->result();
+	}
+	
 	public function hapus_course($course_id)
 	{
 		$this->db->where('course_id',$course_id);

@@ -29,7 +29,7 @@
                   <td><?php echo $vid->vid_nama ?></td> <!--Name-->
                   <td><?php echo $vid->vid_desc ?></td> <!--Description-->
                   <td><?php echo $vid->vid_content ?></td> <!--Content-->
-                  <td><?php echo $vid->vid_thumbnail ?></td> <!--Thumbnail-->
+                  <td><?php echo $vid->vid_thubnail ?></td> <!--Thumbnail-->
                   <td><?php echo $vid->univ_id ?></td> <!-- Univ ID -->
                   <td><?php echo $vid->vid_maker ?></td> <!-- Dosen pembuat video -->
                   <td>
@@ -79,7 +79,7 @@
                       <input type="text" class="form-control" id="recipient-name" name="vid_content" placeholder="Content">
                     </div>
                     <div class="form-group">
-                      <input type="file" accept="image/*" class="form-control" id="recipient-name" name="vid_thumbnail" placeholder="Thumbnail">
+                      <input type="file" accept="image/*" class="form-control" id="recipient-name" name="vid_thubnail" placeholder="Thumbnail">
                     </div>
                     <div class="form-group">
                       <input type="text" class="form-control" id="recipient-name" name="univ_id" placeholder="Univ ID">
@@ -125,7 +125,7 @@
                         <input type="text" class="form-control" id="recipient-name" name="vid_content" placeholder="Content">
                       </div>
                       <div class="form-group">
-                        <input type="file" accept="image/*" class="form-control" name="vid_thumbnail" id="recipient-name" placeholder="Thumbnail">
+                        <input type="file" accept="image/*" class="form-control" name="vid_thubnail" id="recipient-name" placeholder="Thumbnail">
                       </div>
                       <div class="form-group">
                         <input type="text" class="form-control" id="recipient-name" name="univ_id" placeholder="Univ ID">

@@ -42,7 +42,7 @@ public function login_action()
             $data_session = array(
                 'email' => $data['email'],
                 'u_name' => $u_name,
-                'status' => "signed"
+                'status' => "user"
             );
             $this->session->set_userdata($data_session);
             // $message = "Kamu telah berhasil login!";

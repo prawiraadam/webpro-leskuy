@@ -95,6 +95,12 @@ li {
     text-align: center;
 }
 
+.btn btn-warning btn-secondary{
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
 @media screen and (max-width: 992px) {
     .column {
         width: 50%;
