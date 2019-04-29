@@ -1,5 +1,8 @@
 html{
-	font-family: 'Roboto', sans-serif;
+    height:100%;
+}
+body{
+	min-height: 100%;
 }
 
 /*COLORS
@@ -8,12 +11,16 @@ Dark Gray : #373737;
 */
 
 .col-9{
-	margin: 44px;	
+	margin: 44px 0px 44px 44px;
 	width: 100%;
-	height: 634px;
+	height: 100%;
 	text-align: center;
 	border-radius: 5px;
 	background-color: white;
+}
+
+.table table-striped{
+	height: 100%;
 }
 
 .table-title{
@@ -42,10 +49,6 @@ Dark Gray : #373737;
 #myBtn{
 	display: flex;
 	float: right;
-	margin-right: 60px;
-}
-
-.tablePages{
-	margin-left: 43%;
-	text-align: center;
+	margin-right: 40px;
+	margin-bottom: 12px;
 }

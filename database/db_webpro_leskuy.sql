@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 17, 2019 at 03:08 PM
+-- Generation Time: Apr 29, 2019 at 06:14 PM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.2.12
 
@@ -21,6 +21,24 @@ SET time_zone = "+00:00";
 --
 -- Database: `db_webpro_leskuy`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `admin`
+--
+
+CREATE TABLE `admin` (
+  `admin_id` varchar(20) NOT NULL,
+  `admin_pass` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`admin_id`, `admin_pass`) VALUES
+('admin01', 'b2643ddf720115c8af7b6e76f3ae90fc');
 
 -- --------------------------------------------------------
 
@@ -43,7 +61,11 @@ CREATE TABLE `course` (
 --
 
 INSERT INTO `course` (`course_id`, `sub_id`, `univ_id`, `course_name`, `course_desc`, `course_date`, `course_price`) VALUES
-('MCHLR', 'KMPTR', 'ITB', 'Machine Learning', 'Machine Learning merupakan salah satu cabang dari disiplin ilmu Kecerdasan Buatan (Artificial Intellegence) yang membahas mengenai pembangunan sistem yang berdasarkan pada data.', '2019-02-14', 75000);
+('ADRDEV', 'KMPTR', 'TELU', 'Android Development', 'Android software development is the process by which new applications are created for devices running the Android operating system.', '2019-04-01', 100000),
+('DBSYS', 'KMPTR', 'UGM', 'Database System & Architecture', 'A database is an organized collection of data, generally stored and accessed electronically from a computer system. Where databases are more complex they are often developed using formal design and mo', '2019-02-12', 150000),
+('IMGPRCS', 'KMPTR', 'TELU', 'Matlab Image Processing', 'image processing is the use of computer algorithms to perform image processing on digital images.', '2019-03-01', 100000),
+('MCHLR', 'KMPTR', 'ITB', 'Machine Learning', 'Machine Learning merupakan salah satu cabang dari disiplin ilmu Kecerdasan Buatan (Artificial Intellegence) yang membahas mengenai pembangunan sistem yang berdasarkan pada data.', '2019-02-14', 75000),
+('UIUX', 'SNI', 'ISBI', 'UI / UX Development', 'User interface design or user interface engineering is the design of user interfaces for machines and software, such as computers, home appliances, mobile devices, and other electronic devices, with t', '2019-04-02', 80000);
 
 -- --------------------------------------------------------
 
@@ -148,11 +170,21 @@ CREATE TABLE `video` (
 --
 
 INSERT INTO `video` (`vid_id`, `course_id`, `univ_id`, `vid_nama`, `vid_content`, `vid_desc`, `vid_thubnail`, `vid_maker`) VALUES
-(1, 'MCHLR', 'ITB', 'Regresi Linear, pertemuan 1', 'https://www.youtube.com/watch?v=VKTXVV0eTIY', 'sebuah video linear regresi', 'thumb1.jpg', 'Romi Romanda');
+(1, 'MCHLR', 'ITB', 'Regresi Linear, pertemuan 1', 'https://www.youtube.com/watch?v=VKTXVV0eTIY', 'sebuah video linear regresi', 'thumb1.jpg', 'Romi Romanda'),
+(2, 'MCHLR', 'ITB', 'Pengenalan Machine Learning', 'https://www.youtube.com/watch?v=HcqpanDadyQ', 'Video mengenai hal hal seputar machine learning', 'malin.jpg', 'Romi Romanda'),
+(3, 'UIUX', 'ISBI', 'Material Design', 'https://www.youtube.com/watch?v=rrT6v5sOwJg', 'Pengenalan material design', 'matdesign.png', 'Marc Jacobs'),
+(4, 'UIUX', 'ISBI', 'Introduction to UI / UX', 'https://www.youtube.com/watch?v=RtPnVtXw6HU', 'Pengenalan UI / UX', 'uiux.png', 'Marc Jacobs'),
+(5, 'ADRDEV', 'TELU', 'Android Studio Part I', 'https://www.youtube.com/watch?v=g9YblXBQ5uU', 'Pengenalan software android studio', 'androidstudio.jpg', 'Andy Rubin');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `admin`
+--
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`admin_id`);
 
 --
 -- Indexes for table `course`
@@ -198,7 +230,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `video`
 --
 ALTER TABLE `video`
-  MODIFY `vid_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `vid_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -38,9 +38,13 @@ class Admin extends CI_Controller {
 
   	public function video(){
   		$this->load->view('Admin/AdminSideBar_view');
-  		$video = $this->M_video->getVideo();
+  		$video = $this->M_video->getVideoAdmin();
   		$this->load->view('Admin/AdminManageVideo', ['video' => $video]);
   	}
+
+    public function logout(){
+      $this->load->view('Admin/AdminLogin');
+    }
 
   	// Add to lists
   	public function addUser(){

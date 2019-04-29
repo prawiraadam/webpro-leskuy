@@ -13,10 +13,12 @@
 <style type="text/css">
   .container-fluid{
     background-color: #D0D3D4;
+    min-height: 100vh;
   }
 
   .col-2{
     background-color: #373737;
+    min-height: 100vh;
   }
 
   .logo{
@@ -40,10 +42,10 @@
 	<div class="container-fluid">
 		<div class="row">
   		<div class="col-2">
-        <img class="logo" src="../../assets/img/Logo.png">
+        <img class="logo" src="../../assets/img/logo.png">
       <!-- Sidebar -->
   		<ul class="nav flex-column">
-        <li class="nav-item"><a class="nav-link active" href="<?php echo base_url('index.php/Admin/index') ?>"><i class='far'>&#xf007;</i>User List</a></li>
+        <li class="nav-item"><a class="nav-link" href="<?php echo base_url('index.php/Admin/index') ?>"><i class='far'>&#xf007;</i>User List</a></li>
         <li class="nav-item"><a class="nav-link" href="<?php echo base_url('index.php/Admin/univ') ?>"><i class='fas'>&#xf19c;</i>University List</a></li>
         <li class="nav-item"><a class="nav-link" href="<?php echo base_url('index.php/Admin/subject')?>"><i class='fas'>&#xf5da;</i>Subject List</a></li>
         <li class="nav-item"><a class="nav-link" href="<?php echo base_url('index.php/Admin/course')?>"><i class='fas'>&#xf02d;</i>Course List</a></li>
